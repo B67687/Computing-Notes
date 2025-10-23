@@ -2,6 +2,7 @@
 > Canonical notation exists to **standardize Boolean expressions** for truth-table alignment, simplification, and implementation.
 >
 > It must convey:
+>
 > - The **function name**
 > - The **input variables**
 > - The **canonical form type** (SOP or POS)
@@ -21,6 +22,7 @@ F(X, Y, Z) = ΠM(0, 3, 6, 8)   ← Product of Maxterms (POS)
 
 > [!Note]
 > These forms are:
+>
 > - **Truth-table aligned**
 > - **Gate-synthesis ready**
 > - **Audit-friendly**
@@ -38,7 +40,7 @@ F(X, Y, Z) = ΠM(0, 3, 6, 8)   ← Product of Maxterms (POS)
 | `F(X,Y,Z) = Σ(1,2,5,7)`| Missing term type—ambiguous whether minterms used  |
 
 > [!Audit Flag]
-> Canonical notation must be **self-contained** and **unambiguous**.  
+> Canonical notation must be **self-contained** and **unambiguous**.
 > Anything less sacrifices semantic integrity.
 
 ---
@@ -57,6 +59,7 @@ F(X, Y, Z) = ΠM(0, 3, 6, 8)   ← Product of Maxterms (POS)
 ### 🧠 Visual Analogy
 
 > Think of canonical notation like a **passport**:
+>
 > - `F(X,Y,Z)` is the name and identity
 > - `Σm(...)` or `ΠM(...)` is the visa type (entry or exit logic)
 > - The indices are the **countries visited** (truth table rows)
@@ -71,8 +74,8 @@ F(X, Y, Z) = ΠM(0, 3, 6, 8)   ← Product of Maxterms (POS)
 > Canonical SOP:  F(X,Y,Z) = Σm(1,2,5,7)
 > Canonical POS:  F(X,Y,Z) = ΠM(0,3,6,8)
 > ```
+>
 > These are the **only semantically complete** forms for canonical Boolean expression.
 
 > [!NOTE]
 > Any notation lacking `F(...)`, `Σ/Π`, `m/M`, and truth indices is **non-canonical** and should be flagged for vault exclusion or annotation.
-

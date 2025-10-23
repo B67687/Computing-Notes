@@ -1,10 +1,13 @@
 ## 🔍 Motivation
+
 In Boolean algebra, negating a compound expression like `cd` or `c + d` does **not** behave like arithmetic negation. Misapplying intuition from normal algebra leads to incorrect simplifications and faulty logic. This noteblock flags the distinction and anchors the correct approach using **De Morgan’s laws**.
 
 ---
 
 ## ❌ Common Misconception
+
 Assuming:
+
 - `c'd'` is the complement of `cd`
 - `c'd' + cd = 1`
 
@@ -14,8 +17,8 @@ This is **false**. `c'd'` is only one of **three** cases where `cd = 0`. The ful
 (cd)' = c' + d'
 ```
 
-
 So:
+
 - `c'd' ≠ (cd)'`
 - `c'd' + cd ≠ 1`
 
@@ -48,13 +51,11 @@ Expression:
 abc'd' + abcd + abcd'
 ```
 
-
 Incorrect simplification:
 
 ```
 = ab (c'd' + cd + cd') → ab
 ```
-
 
 Correct simplification:
 
@@ -62,8 +63,8 @@ Correct simplification:
 = ab (c'd' + cd + cd') = ab (c + d')
 ```
 
-
 Why? Because:
+
 - `cd + cd' = c`
 - `c'd' + c = c + d'` ← via distributive identity
 
@@ -80,4 +81,3 @@ Use K-map tiles or truth tables to visualize how `c'd'` only covers one quadrant
 - Always apply De Morgan’s laws when negating compound Boolean expressions.
 - Never treat a single minterm as the full complement of a product.
 - Boolean negation flips operators and expands coverage—not just signs.
-

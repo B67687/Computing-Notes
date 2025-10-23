@@ -40,5 +40,5 @@ Any signal changes that happen **between edges** are ignored unless they persist
 ## 🧠 Summary
 
 > **Sequential circuits synchronize state updates to clock edges. The clock cycle defines the temporal resolution of valid updates**
-> 
+>
 > **Transients faster than the cycle period are ignored, and higher clock frequencies enable more frequent state transitions—provided signal stability is maintained**

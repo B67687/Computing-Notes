@@ -1,5 +1,6 @@
 
 ## Interpreter Flow
+
 - **Source code** stays in high-level form (sometimes pre-tokenized into intermediate bytecode).
 - **Interpreter** reads one chunk at a time → translates to machine instructions → executes immediately.
 - Execution largely **follows source order**, so fewer global optimizations.
@@ -8,6 +9,7 @@
 ---
 
 ## Compiler Flow
+
 - Reads the **entire source** before execution.
 - Builds an **Abstract Syntax Tree (AST)** and performs multiple analysis/optimization passes.
 - Emits a **platform-specific machine code binary** (or VM bytecode).
@@ -16,6 +18,7 @@
 ---
 
 ## 🔍 Key Takeaway
+
 - **Interpreter →** Portability & immediacy (no build step, same source runs anywhere with the right runtime).
 - **Compiler →** Performance & optimization (cost: platform‑specific binaries and a compile step).
 
@@ -33,9 +36,10 @@
 ---
 
 ## 💡 Summary
+
 High‑level languages trade raw execution speed for:
+
 - Developer productivity
 - Maintainability
 - Portability
 - Safety
-

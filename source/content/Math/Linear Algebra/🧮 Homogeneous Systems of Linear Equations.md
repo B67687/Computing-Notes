@@ -1,20 +1,22 @@
 
-A **homogeneous system** is a system of linear equations where **all constant terms are zero**.  
+A **homogeneous system** is a system of linear equations where **all constant terms are zero**.
 
-> [!note] Why Is It Called “Homogeneous”?  
-> In mathematics, “homogeneous” originally meant **structurally uniform**—every term has the same type or degree.  
+> [!note] Why Is It Called “Homogeneous”?
+> In mathematics, “homogeneous” originally meant **structurally uniform**—every term has the same type or degree.
 >
 > In a **homogeneous system of linear equations**, all constant terms are zero:
 > $$
 > A\vec{x} = \vec{0}
 > $$
-> 
+>
 > Where:
+>
 > - $A$ is an $m \times n$ coefficient matrix
 > - $\vec{x}$ is the vector of unknowns
 > - $\vec{0}$ is the zero vector in $\mathbb{R}^m$
 >
 > This means:
+>
 > - Every equation is made **only of variables**
 > - There are **no external offsets or constants**
 >
@@ -93,7 +95,7 @@ Let $z = t$ (free variable), then:
 - $y = t$
 - $z = t$
 
-→ Solution set:  
+→ Solution set:
 $$
 \begin{bmatrix}
 x \\

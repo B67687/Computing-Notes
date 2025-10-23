@@ -25,7 +25,6 @@ A + B =  0011   (3)
 - No special handling needed.
 - Overflow is ignored unless sign bit flips unexpectedly.
 
-
 ### ✅ 1’s Complement Addition (with end-around carry)
 
 ```text
@@ -85,7 +84,8 @@ Sign: Negative × Positive = Negative
 Result: 11111010 (−6 in 8-bit 2’s complement)
 ```
 
-### ⚠️ Notes:
+### ⚠️ Notes
+
 - Multiplication requires sign extension.
 - Most systems use **Booth’s algorithm** or **signed multiplication logic**.
 
@@ -98,4 +98,3 @@ Result: 11111010 (−6 in 8-bit 2’s complement)
 | Addition      | Add + end-around carry | Add directly |
 | Subtraction   | Add 1’s complement + 1 + carry | Add 2’s complement |
 | Multiplication| Unsigned × Unsigned, then apply sign | Same, with sign logic |
-

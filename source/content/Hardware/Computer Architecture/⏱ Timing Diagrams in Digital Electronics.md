@@ -1,8 +1,10 @@
 ## 📜 Overview
-A **timing diagram** is a graphical representation of the relationship between **digital signals** over time.  
+
+A **timing diagram** is a graphical representation of the relationship between **digital signals** over time.
 It shows when signals change from HIGH (`1`) to LOW (`0`) and how those transitions relate across multiple signals.
 
 Timing diagrams are essential for:
+
 - Understanding **sequential logic** behavior.
 - Debugging signal interactions.
 - Designing and verifying circuit timing requirements.
@@ -27,4 +29,3 @@ Timing diagrams are essential for:
 ## ⏳ Example — Basic Clock & Data Relationship
 
 **Clock signal (CLK) and data signal (D):**
-

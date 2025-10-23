@@ -15,21 +15,24 @@ This works regardless of sign, magnitude, or algebraic complexity—so long as t
 ## 🧩 Formal Construction
 
 Let:
+
 - $x = r_1 + j$
 - $y = r_2 - j$
 
 Where:
+
 - $r_1, r_2 \in \mathbb{Q}$ (rational)
 - $j \in \mathbb{R} \setminus \mathbb{Q}$ (irrational)
 
 Then:
+
 - $x + y = (r_1 + r_2) + (j - j) = r_1 + r_2$ → **rational**
 
 ---
 
 ## ✅ Rational Closure Justification
 
-- Rational numbers are closed under addition:  
+- Rational numbers are closed under addition:
   $\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd} \in \mathbb{Q}$
 - Integer operations are closed under addition and multiplication
 - Therefore, $r_1 + r_2 \in \mathbb{Q}$
@@ -44,4 +47,3 @@ Then:
 | $-1 + \pi$           | $3 - \pi$            | $2$            | ✅        | Mixed signs |
 | $5 + \sqrt{7}$       | $-2 - \sqrt{7}$      | $3$            | ✅        | Negative irrational cancel |
 | $\sqrt{2}$           | $\pi$                | $\sqrt{2} + \pi$ | ❌        | No cancellation |
-

@@ -1,5 +1,5 @@
 
-In Boolean algebra, “don’t care” conditions represent input combinations where the output is irrelevant or undefined. 
+In Boolean algebra, “don’t care” conditions represent input combinations where the output is irrelevant or undefined.
 
 By selectively treating don’t cares as 1s or 0s——depending on whether we are simplifying SOP or POS——we can form larger implicants, eliminate more variables, and simplify logic expressions.
 
@@ -45,8 +45,6 @@ We treat them as 1 **only if it helps**. If including them doesn’t simplify th
 ## 🧪 Teaching Analogy
 
 Think of don’t cares as **wildcards in poker**:
+
 - You don’t need them to win,
 - But if they help you form a better hand, you use them.
-
-
-

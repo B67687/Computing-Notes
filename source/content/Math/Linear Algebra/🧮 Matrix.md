@@ -1,10 +1,11 @@
-A **matrix** is a rectangular array of numbers. 
+A **matrix** is a rectangular array of numbers.
 
 Each number is called an **entry** or **element** of the matrix.
 
 ### 🔢 Examples
+>
 > **General** matrix:
-  
+
   $$
   \begin{bmatrix}
   4 & 3 & 0 & 6 & -1 & 0 \\
@@ -13,15 +14,14 @@ Each number is called an **entry** or **element** of the matrix.
   \end{bmatrix}
   $$
 
-
-
 ---
 
 ## 📏 Matrices
+
 The **size** of a matrix is denoted by $n \times m$, where:
+
 - $n$ = number of **rows**
 - $m$ = number of **columns**
-
 
 | Type            | Shape       | Example                          |
 |-----------------|-------------|----------------------------------|
@@ -35,8 +35,8 @@ The **size** of a matrix is denoted by $n \times m$, where:
 > Often when dealing with `1 x 1` matrices we will **drop the surrounding brackets** and just write -2.
 
 > [!Warning] What vector means
-> Note that sometimes **column matrices** and **row matrices** are called **column vectors** and **row vectors** respectively 
-> 
+> Note that sometimes **column matrices** and **row matrices** are called **column vectors** and **row vectors** respectively
+>
 > We do need to be careful with the word vector however as in later chapters the word vector will be used to denote something much more general than a column or row matrix
 
 ---
@@ -60,24 +60,28 @@ $$
 ---
 
 ## 🧾 Entry Notation
+
 To refer to a specific entry in a matrix $A$, use:
-> $a_{ij}$ or $(A)_{ij}$  
+> $a_{ij}$ or $(A)_{ij}$
+>
 > - $i$ = row index
 > - $j$ = column index
 
 > [!note] General Use Case
 > **Upper case letters** are generally used to refer to **matrices**
 > (e.g., $A$, $B$, $C$)
-> 
-> **Lower case letters** generally are used to refer to **numbers**/**entries** 
+>
+> **Lower case letters** generally are used to refer to **numbers**/**entries**
 > (e.g., $a_{ij}$, $b_{ij}$)
 
 ---
 
 ## 🧰 General Matrix Representation
+
 A general $n \times m$ matrix $A$ can be written as:
 
 ### 🔣 Subscript Notation
+
 $$
 A = \begin{bmatrix}
 a_{11} & a_{12} & \cdots & a_{1m} \\
@@ -88,6 +92,7 @@ a_{n1} & a_{n2} & \cdots & a_{nm}
 $$
 
 ### ...with size denoted
+
 $$
 A = \begin{bmatrix}
 a_{11} & a_{12} & \cdots & a_{1m} \\
@@ -103,18 +108,20 @@ $$
 ---
 
 ### 🧭 Vector Notation
-- Column matrix (vector): $\mathbf{a}$ or $\vec{a}$  
+
+- Column matrix (vector): $\mathbf{a}$ or $\vec{a}$
   $$
   \mathbf{\vec{a}} = \begin{bmatrix} a_1 \\ a_2 \\ \vdots \\ a_n \end{bmatrix}
+
  $$
-- Row matrix (vector): $\mathbf{b}$ or $\vec{b}$  
+- Row matrix (vector): $\mathbf{b}$ or $\vec{b}$
   $$
  \mathbf{\vec{b}} = [b_1, b_2, \dots, b_m]
  $$
 
 > [!Note]
 > In written documents, vectors are often **bolded**
-> 
+>
 > On chalkboards, **arrows** are used due to visibility constraints.
 >
 > The convention in this notes will be **bolded arrows** for **maximum readability**

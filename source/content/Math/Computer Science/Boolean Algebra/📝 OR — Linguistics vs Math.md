@@ -1,5 +1,5 @@
 
-When we use the word "or" in everyday language, we often mean "one or the other, but not both." 
+When we use the word "or" in everyday language, we often mean "one or the other, but not both."
 
 This is called **exclusive OR** (`XOR`)
 
@@ -16,13 +16,14 @@ In mathematics, computer science, and logic, the term `OR` by itself, always mea
 Think of it this way:
 
 > `A OR B` is `TRUE` if:
+ >
  > - A is `TRUE`
  > - B is `TRUE`
  > - **BOTH** A and B are TRUE
 
-This is precisely why the absorption law holds true. 
+This is precisely why the absorption law holds true.
 
-The expression $A \lor (A \land B)$ is true whenever $A$ is true. 
+The expression $A \lor (A \land B)$ is true whenever $A$ is true.
 
 The additional term $A \land B$ doesn't add any new conditions for the overall statement to be true because if $A \land B$ is true, then A must already be true.
 

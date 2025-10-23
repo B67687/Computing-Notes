@@ -7,13 +7,16 @@ This notebook outlines best practices for writing clean, modular, and synthesis-
 You should follow these practices
 
 ### 🔤 Descriptive and Mnemonic Naming
+
 - Use meaningful names for modules, ports, and signals.
 - Example: `carry_out` instead of `co`, `sum` instead of `s`.
 
 ---
 
 ### 🧩 Favor Named Instantiation
+
 - Improves readability and reduces port-order errors.
+
 ```verilog
 add_half M1 (.a(A), .b(B), .sum(w1), .cout(w2));
 ```
@@ -21,8 +24,10 @@ add_half M1 (.a(A), .b(B), .sum(w1), .cout(w2));
 ---
 
 ### 🧱 Modular Design
+
 - Break logic into reusable submodules.
 - Use parameters for scalable designs.
+
 ```verilog
 module adder #(parameter WIDTH = 8) (...);
 ```
@@ -30,18 +35,21 @@ module adder #(parameter WIDTH = 8) (...);
 ---
 
 ### 🎨 Consistent Formatting
+
 - Align declarations and logic blocks.
 - Use consistent indentation for visual clarity.
 
 ---
 
 ### ⏰ Use Clocked Always Blocks
+
 - Prefer `always @(posedge clk)` for sequential logic.
 - Avoid [[📑 Verilog Syntax Reference#🔄 Conditional Statements| latch inference]] from incomplete conditions.
 
 ---
 
 ### 🔄 Explicit Reset Logic
+
 ```verilog
 always @(posedge clk or posedge reset) begin
   if (reset)
@@ -54,6 +62,7 @@ end
 ---
 
 ### 🔁 Use Non-Blocking Assignments for Sequential Logic
+
 - Use `<=` in clocked blocks.
 - Use `=` only for combinational logic.
 
@@ -98,13 +107,16 @@ end
 ---
 
 ### 💬 Strategic Commenting
+
 - Explain non-obvious logic and edge cases.
 - Avoid redundant comments.
 
 ---
 
 ### 🔢 Avoid Magic Numbers
+
 - Use `parameter` or `localparam` for constants.
+
 ```verilog
 parameter WIDTH = 8;
 ```
@@ -112,28 +124,33 @@ parameter WIDTH = 8;
 ---
 
 ### 🧪 Simulate Before Synthesis
+
 - Write testbenches to verify behavior.
 - Use assertions and waveform inspection.
 
 ---
 
 ### 🚫 Avoid Vendor-Specific Constructs
+
 - Stick to synthesizable, portable Verilog.
 - Avoid `initial` blocks unless targeting specific FPGAs.
 
 ---
 
 ### 🧭 Use Case Defaults
+
 - Always include a `default:` case to prevent unintended behavior.
 
 ---
 
 ### 📑 Document Module Interfaces
+
 - Include comments or headers for module purpose, inputs, and outputs.
 
 ---
 
 ### 🛠️ Audit Synthesis Logs
+
 - Review for inferred latches, unused signals, or resource-heavy constructs.
 
 ---
@@ -143,6 +160,7 @@ parameter WIDTH = 8;
 You should avoid these practices
 
 ### ⚠️ Vector Width Mismatches
+
 ```verilog
 wire [3:0] a;
 assign a = 5; // ❌ RHS is 3'b101, not 4 bits
@@ -151,6 +169,7 @@ assign a = 5; // ❌ RHS is 3'b101, not 4 bits
 ---
 
 ### ⚠️ Unintended Latch Inference
+
 ```verilog
 always @(a or b)
   if (a) y = b; // ❌ No else → latch inferred
@@ -159,11 +178,13 @@ always @(a or b)
 ---
 
 ### ⚠️ Mixed Blocking and Non-Blocking Assignments
+
 - Mixing `=` and `<=` in the same `always` block leads to race conditions.
 
 ---
 
 ### ⚠️ Ambiguous Signal Driving
+
 ```verilog
 assign x = a;
 assign x = b; // ❌ Multiple drivers
@@ -172,11 +193,13 @@ assign x = b; // ❌ Multiple drivers
 ---
 
 ### ⚠️ Overuse of `assign` for Sequential Logic
+
 - `assign` is for combinational logic only. Use `always` for sequential behavior.
 
 ---
 
 ### ⚠️ Missing Sensitivity List Entries
+
 ```verilog
 always @(a) y = a & b; // ❌ Missing b
 ```
@@ -184,16 +207,19 @@ always @(a) y = a & b; // ❌ Missing b
 ---
 
 ### ⚠️ Using `initial` for Synthesis
+
 - `initial` blocks are not synthesizable in most ASIC flows.
 
 ---
 
 ### ⚠️ Case-Sensitivity Errors
+
 - Verilog is case-sensitive. `Sum` ≠ `sum`.
 
 ---
 
 ### ⚠️ Implicit Net Declarations
+
 - Avoid undeclared wires. Use `default_nettype none` to catch these.
 
 ---

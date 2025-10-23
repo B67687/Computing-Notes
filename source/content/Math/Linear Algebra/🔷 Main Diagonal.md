@@ -1,4 +1,5 @@
 In a square matrix $A$, the main diagonal consists of entries where **row index equals column index**: $a_{ii}$.
+
 - This diagonal forms the backbone for defining matrix types and operations.
 
 ---
@@ -16,18 +17,21 @@ In a square matrix $A$, the main diagonal consists of entries where **row index 
 ---
 
 ### 📊 Determinant Calculation
+
 - For **triangular matrices**, the determinant is the **product of diagonal entries**.
 - In **Gaussian elimination**, pivot positions lie on the diagonal and determine solvability.
 
 ---
 
 ### 🧠 Eigenvalue Theory
+
 - In **diagonalizable matrices**, the diagonal often holds the **eigenvalues**.
 - In **Jordan canonical form**, diagonal entries reflect algebraic multiplicities.
 
 ---
 
 ### 🔢 Trace of a Matrix
+
 - The **trace** is the sum of diagonal entries:
   $$
   \text{tr}(A) = \sum_{i=1}^{n} a_{ii}
@@ -37,9 +41,8 @@ In a square matrix $A$, the main diagonal consists of entries where **row index 
 ---
 
 ### 🧠 Semantic Flag in Applications
+
 - Diagonal entries often represent **self-interactions**, **weights**, or **penalties**:
   - Graph theory: edge from node to itself
   - Physics: inertia or energy terms
   - Machine learning: regularization weights
-
-

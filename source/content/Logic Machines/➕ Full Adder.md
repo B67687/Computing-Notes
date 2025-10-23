@@ -22,13 +22,13 @@ But since `XOR` is associative, the sequence or grouping of addition doesn't mat
 
 Carry is a little harder to find a general form so we start from an exhaustive form, where **any pair produces a carry**
 > `A` and `B` produces a carry
-> 
+>
 > **OR**
-> 
+>
 > `A` and `C_in` produces a carry
-> 
+>
 > **OR**
-> 
+>
 > `B` and `C_in` produces a carry
 
 > [!example] Why we find pairs
@@ -45,15 +45,12 @@ Thus, we get the first Exhaustive Form:
 
 We can factor the expression a bit more once we realise that 2 terms share `C_in` as a factor
 
-
-> [!note] Intermediate Simplified Form 
+> [!note] Intermediate Simplified Form
 > $$
 > C_{out} = A \cdot B + (A + B) \cdot C_{in}
 > $$
- 
 
 But `A` and `B` cant be both true at the same time——a condition that is included with `inclusive OR`——so we have to use `exclusive OR`
-
 
 > [!tip] General Formula for Sum
 > $$C_{out} = A \cdot B + (A \oplus B) \cdot C_{in}$$

@@ -1,16 +1,18 @@
 ## 🧠 Overview
+
 The Carry Look-Ahead Adder (CLA) is a fast binary adder architecture that computes carry signals in parallel using **generate** and **propagate** logic. Unlike ripple carry adders, which wait for each carry to ripple through sequentially, CLA predicts carry outcomes based on input bits—enabling faster addition.
 
 ---
 
 ## 🔣 Bitwise Inputs
-Let `A = AₙAₙ₋₁...A₀` and `B = BₙBₙ₋₁...B₀` be two n-bit binary numbers.  
+
+Let `A = AₙAₙ₋₁...A₀` and `B = BₙBₙ₋₁...B₀` be two n-bit binary numbers.
 Each bit position `i` has:
 
-- `Aᵢ`, `Bᵢ`: input bits  
-- `Gᵢ`: generate signal  
-- `Pᵢ`: propagate signal  
-- `Cᵢ`: carry-in to bit `i`  
+- `Aᵢ`, `Bᵢ`: input bits
+- `Gᵢ`: generate signal
+- `Pᵢ`: propagate signal
+- `Cᵢ`: carry-in to bit `i`
 - `Sᵢ`: sum output
 
 ---
@@ -18,9 +20,10 @@ Each bit position `i` has:
 ## ⚙️ Generate and Propagate Logic
 
 ### 🔧 Definitions
-- **Generate**: `Gᵢ = Aᵢ · Bᵢ`  
+
+- **Generate**: `Gᵢ = Aᵢ · Bᵢ`
   → Carry is generated if both inputs are 1.
-- **Propagate**: `Pᵢ = Aᵢ ⊕ Bᵢ`  
+- **Propagate**: `Pᵢ = Aᵢ ⊕ Bᵢ`
   → Carry is propagated if exactly one input is 1.
 
 ### 📊 Truth Table
@@ -37,15 +40,17 @@ Each bit position `i` has:
 ## 🔁 Carry Computation
 
 ### 🧮 Recursive Carry Logic
+
 Given initial carry-in `C₀`, the carry-out for each bit is:
 
 - `C₁ = G₀ + P₀ · C₀`
 - `C₂ = G₁ + P₁ · C₁ = G₁ + P₁ · (G₀ + P₀ · C₀)`
 - `C₃ = G₂ + P₂ · C₂ = G₂ + P₂ · (G₁ + P₁ · (G₀ + P₀ · C₀))`
-- General form:  
+- General form:
   `Cᵢ₊₁ = Gᵢ + Pᵢ · Cᵢ`
 
 ### ➕ Sum Logic
+
 - `Sᵢ = Pᵢ ⊕ Cᵢ`
 
 ---
@@ -83,21 +88,20 @@ Pᵢ · Cᵢ -──▶            │
            └────────────┘
 ```
 
-
 ---
 
 ## ✅ Advantages
 
-- ⚡ **Speed**: Parallel carry computation eliminates ripple delay  
-- 🧩 **Scalability**: Suitable for wider bit-width adders  
+- ⚡ **Speed**: Parallel carry computation eliminates ripple delay
+- 🧩 **Scalability**: Suitable for wider bit-width adders
 - 🧱 **Modularity**: Can be chained for 8-bit, 16-bit, or 32-bit addition
 
 ---
 
 ## ⚠️ Tradeoffs
 
-- 🧮 **Gate Count**: Requires more gates than ripple carry  
-- 🧠 **Complexity**: Carry logic grows with bit-width  
+- 🧮 **Gate Count**: Requires more gates than ripple carry
+- 🧠 **Complexity**: Carry logic grows with bit-width
 - 🔋 **Power**: Higher power consumption due to parallel logic
 
 ---

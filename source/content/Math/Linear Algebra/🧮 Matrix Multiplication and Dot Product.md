@@ -1,14 +1,14 @@
 
 Fundamentally **matrices** are **sets of numbers grouped together in organised ways** where the axis represent the different factors we are grouping them by.
 
-> [!note] Parallel in Computer Science 
+> [!note] Parallel in Computer Science
 > In computer science, matrices resemble **arrays**—but in linear algebra, they are more strict with **preserving orientation**
 
 ---
 
 ## 🔧 Preserving Linearity in Arithmetic
 
-Operations between numbers must **maintain the current level of abstraction** in order to remain **linear**.  
+Operations between numbers must **maintain the current level of abstraction** in order to remain **linear**.
 
 - This includes **addition and subtraction**, which operate directly on values without changing their structural role:
 
@@ -33,31 +33,31 @@ $$
 
 ## 🚫 Why Division Is Not Linear
 
+**Scalar multiplication** applies a process to reach a result.
 
-**Scalar multiplication** applies a process to reach a result. 
-
-$$a \cdot n$$  
+$$a \cdot n$$
 
 > [!note] Abstraction-Preserving
 > It stays within the abstraction as the **original number** is still **the one being dealt with**
 
-**Division** finds **how many times the process was applied** to get to the result  
-  
-$$\dfrac{c}{a} = n$$ 
+**Division** finds **how many times the process was applied** to get to the result
+
+$$\dfrac{c}{a} = n$$
 
 > [!note] Abstraction Shift
 > Division **shifts the abstraction** away from the original numbers
-> 
+>
 > Therefore, it is **not a linear operation**
 
 ---
 
 ## 🧮 Linearity in Matrix Operations
 
-In linear algebra, we group numbers together in **organised rows and columns** called **matrices**.  
+In linear algebra, we group numbers together in **organised rows and columns** called **matrices**.
 
 > [!tip] Linearity of Matrices
-> **Maintaining linearity in matrices** requires 
+> **Maintaining linearity in matrices** requires
+>
 > - Maintaining the **position of each number relative to one another**
 > - Each number must also maintain their **relative magnitude to one another**
 >
@@ -70,7 +70,7 @@ In linear algebra, we group numbers together in **organised rows and columns** c
 ### ➕ Matrix Addition
 
 $$ A \pm B \in \mathbb{R}^{m \times n} $$
-  
+
 Linear operations on these groups are still just **addition and subtraction**, applied **element-wise** on matrices of the **same shape**
 
 $$
@@ -126,23 +126,23 @@ $$
 ---
 
 ## 📚 Composition of Linear Operations in Matrices
-The **composition** of these 2 linear operations are also linear, thus this is the only possible composition 
+
+The **composition** of these 2 linear operations are also linear, thus this is the only possible composition
 
 > [!example] Fundamental Composition Form
 > **Add** the **scaled** versions—$a_n$—of the **same size matrices**—$B_n$
 > $$a_1 B_1 + a_2 B_2 + a_3 B_3 + \dots = C$$
 
-> [!warning] Why POS Is Not a Valid Composition  
-> While this form is clearly a **Sum of Products (SOP)**, one might ask:  
+> [!warning] Why POS Is Not a Valid Composition
+> While this form is clearly a **Sum of Products (SOP)**, one might ask:
 > Why not **Product of Sums (POS)**?
 >
-> In scalar arithmetic, **POS** expands into **SOP** due to distributivity.  
-> 
-> In matrix arithmetic, **POS** is not definable element-wise as it would apply **different scalings to different entries**, thus breaking their **relative proportion to one another**. 
+> In scalar arithmetic, **POS** expands into **SOP** due to distributivity.
+>
+> In matrix arithmetic, **POS** is not definable element-wise as it would apply **different scalings to different entries**, thus breaking their **relative proportion to one another**.
 > > This is not meaningfully linear in organised groups of numbers.
 >
 > Matrix Multiplication on the other hand is defined through **SOP** as we will see
-
 
 ---
 
@@ -158,20 +158,20 @@ Which is the same as just
 
 $$
 \boxed{
-	\phantom{\biggr(}
-	a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 + \dots = c
-	\phantom{\biggr)}
+ \phantom{\biggr(}
+ a_1 \cdot b_1 + a_2 \cdot b_2 + a_3 \cdot b_3 + \dots = c
+ \phantom{\biggr)}
 }
 $$
 
 > [!tip] Named Operation
-> This combined multiplication with addition has a special name called a **dot product**, 
-> 
+> This combined multiplication with addition has a special name called a **dot product**,
+>
 > It is essentially a **sum of products**, or **SOP**, of related numbers in matrices
 
 > [!note] Why "Dot Product"?
 > “Dot Product” is named after the **dot notation** used to describe this **composite operation**
-> 
+>
 > $$A \cdot B$$
 >
 > An undescriptive name this is
@@ -207,7 +207,7 @@ How should the 2 matrices of data be represented?
 > This results in one of the matrix to be comprised of
 > > **row matrices**—and therefore read by *row*
 >
-> And the other to be in 
+> And the other to be in
 > > **column matrices**—and therefore read by *column*
 
 Now we have to figure out which side the **matrix made of rows** and the **matrix made of columns** should be on
@@ -215,7 +215,7 @@ Now we have to figure out which side the **matrix made of rows** and the **matri
 > [!note] Left-Right Arrangement
 >
 > Since we write equations like so:
-> 
+>
 > $$
 > \begin{aligned}
 > 2x + 3y &= 8 \\
@@ -229,9 +229,9 @@ Now we have to figure out which side the **matrix made of rows** and the **matri
 >
 >
 > We will continue this trend with:
-> - **coefficients as rows (left)**  
+>
+> - **coefficients as rows (left)**
 > - **constants as columns (right)**
-
 
 Thus, we reached a form that is standard for use in matrix multiplication
 
@@ -268,7 +268,7 @@ Each entry $c_{ij}$ in the **resultant matrix** is computed as a **dot product**
 >
 > This is equivalent to just checking the **columns of the left matrix** and the **rows of the right matrix** respectively
 
-> [!note] Dot Product Entry  
+> [!note] Dot Product Entry
 > Each **entry** in the **resultant matrix** is represented by this
 > $$
 > \begin{aligned}
@@ -283,7 +283,6 @@ Each entry $c_{ij}$ in the **resultant matrix** is computed as a **dot product**
 
 Each row of the **left coefficients matrix** contributes to each row of the result
 
-
 $$
 \begin{bmatrix}
 \textcolor{darkorange}{\boxed{2}} & \textcolor{darkorange}{\boxed{3}} \\
@@ -297,32 +296,32 @@ $$
 =
 \begin{bmatrix}
 \textcolor{darkorange}{
-	\boxed{
-		\textcolor{darkorange}{2} \cdot \textcolor{darkgray}{5}
-		\textcolor{darkgray}{+} 
-		\textcolor{darkorange}{3} \cdot \textcolor{darkgray}{7}
-	}
-}& 
+ \boxed{
+  \textcolor{darkorange}{2} \cdot \textcolor{darkgray}{5}
+  \textcolor{darkgray}{+}
+  \textcolor{darkorange}{3} \cdot \textcolor{darkgray}{7}
+ }
+}&
 \textcolor{darkorange}{
-	\boxed{
-		\textcolor{darkorange}{2} \cdot \textcolor{darkgray}{6}
-		\textcolor{darkgray}{+} 
-		\textcolor{darkorange}{3} \cdot \textcolor{darkgray}{8}
-	}
+ \boxed{
+  \textcolor{darkorange}{2} \cdot \textcolor{darkgray}{6}
+  \textcolor{darkgray}{+}
+  \textcolor{darkorange}{3} \cdot \textcolor{darkgray}{8}
+ }
 }\\
 \textcolor{green}{
-	\boxed{
-		\textcolor{green}{4} \cdot \textcolor{darkgray}{5}
-		\textcolor{darkgray}{+} 
-		\textcolor{green}{1} \cdot \textcolor{darkgray}{7}
-	}
-}& 
+ \boxed{
+  \textcolor{green}{4} \cdot \textcolor{darkgray}{5}
+  \textcolor{darkgray}{+}
+  \textcolor{green}{1} \cdot \textcolor{darkgray}{7}
+ }
+}&
 \textcolor{green}{
-	\boxed{
-		\textcolor{green}{4} \cdot \textcolor{darkgray}{6}
-		\textcolor{darkgray}{+} 
-		\textcolor{green}{1} \cdot \textcolor{darkgray}{8}
-	}
+ \boxed{
+  \textcolor{green}{4} \cdot \textcolor{darkgray}{6}
+  \textcolor{darkgray}{+}
+  \textcolor{green}{1} \cdot \textcolor{darkgray}{8}
+ }
 }
 \end{bmatrix}
 =
@@ -349,32 +348,32 @@ $$
 =
 \begin{bmatrix}
 \textcolor{red}{
-	\boxed{
-		\textcolor{darkgray}{2} \cdot \textcolor{red}{5} 
-		\textcolor{darkgray}{+}
-		\textcolor{darkgray}{3} \cdot \textcolor{red}{7}
-	} 
+ \boxed{
+  \textcolor{darkgray}{2} \cdot \textcolor{red}{5}
+  \textcolor{darkgray}{+}
+  \textcolor{darkgray}{3} \cdot \textcolor{red}{7}
+ }
 }&
 \textcolor{cyan}{
-	\boxed{
-		\textcolor{darkgray}{2} \cdot \textcolor{cyan}{6}
-		\textcolor{darkgray}{+}
-		\textcolor{darkgray}{3} \cdot \textcolor{cyan}{8}
-	}
+ \boxed{
+  \textcolor{darkgray}{2} \cdot \textcolor{cyan}{6}
+  \textcolor{darkgray}{+}
+  \textcolor{darkgray}{3} \cdot \textcolor{cyan}{8}
+ }
 } \\
 \textcolor{red}{
-	\boxed{
-		\textcolor{darkgray}{4} \cdot \textcolor{red}{5}
-		\textcolor{darkgray}{+}
-		\textcolor{darkgray}{1} \cdot \textcolor{red}{7}
-	}
+ \boxed{
+  \textcolor{darkgray}{4} \cdot \textcolor{red}{5}
+  \textcolor{darkgray}{+}
+  \textcolor{darkgray}{1} \cdot \textcolor{red}{7}
+ }
 }&
 \textcolor{cyan}{
-	\boxed{
-		\textcolor{darkgray}{4} \cdot \textcolor{cyan}{6}
-		\textcolor{darkgray}{+}
-		\textcolor{darkgray}{1} \cdot \textcolor{cyan}{8}
-	}
+ \boxed{
+  \textcolor{darkgray}{4} \cdot \textcolor{cyan}{6}
+  \textcolor{darkgray}{+}
+  \textcolor{darkgray}{1} \cdot \textcolor{cyan}{8}
+ }
 }
 \end{bmatrix}
 =
@@ -392,10 +391,10 @@ And thus **Matrix Multiplication** is the **standardised** application of **dot 
 
 > [!note] Overview
 > Each entry in the result matrix is a **related sum of products**—a dot product—between:
+>
 > - A **row** from the **left coefficient matrix**
 > - A **column** from the **right constant matrix**
 >
 > Where
+>
 > - **Number of columns in the left matrix = Number of rows in the right matrix**
-
-

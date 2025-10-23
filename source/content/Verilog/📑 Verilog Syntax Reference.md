@@ -55,6 +55,7 @@ assign y = a & b;
 ## ⏰ Procedural Blocks
 
 ### Sequential Logic
+
 ```verilog
 always @(posedge clk) begin
     q <= d;
@@ -65,6 +66,7 @@ end
 - **Difference**: Uses non-blocking `<=` to avoid race conditions.
 
 ### Combinational Logic
+
 ```verilog
 always @(*) begin
     y = a & b;
@@ -94,16 +96,17 @@ else
 > The term **"latch"** comes from mechanical and electrical systems: a latch is a device that **holds its state** until explicitly changed. In digital logic, a latch behaves similarly—it remains transparent when enabled and retains its value when disabled.
 >
 > **Example of latch inference:**
+>
 > ```verilog
 > always @* begin
 >   if (enable)
 >     q = d;  // ❌ No else → q retains previous value when enable is 0
 > end
 > ```
+>
 > This creates a level-sensitive latch because `q` is not updated when `enable` is false.
 >
 > ✅ **Best Practice**: Always assign outputs in all branches of conditional logic to avoid unintended latch behavior.
-
 
 ---
 
@@ -139,11 +142,13 @@ endcase
 ## 🧩 Module Instantiation
 
 ### Named
+
 ```verilog
 my_mod U1 (.a(A), .b(B), .y(Y));
 ```
 
 ### Ordered
+
 ```verilog
 my_mod U1 (A, B, Y);
 ```

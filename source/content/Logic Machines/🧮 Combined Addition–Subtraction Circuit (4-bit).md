@@ -4,6 +4,7 @@ Design a unified circuit that performs **binary addition** and **subtraction** u
 ---
 
 ## 🔧 Inputs
+
 | Signal     | Description                            |
 |------------|----------------------------------------|
 | `x₀`–`x₃`  | 4-bit binary input X                   |
@@ -15,9 +16,10 @@ Design a unified circuit that performs **binary addition** and **subtraction** u
 ## 🧠 Core Logic
 
 ### 1. **XOR Gates as Conditional Inverters**
+
 Each `yᵢ` passes through an XOR gate with `Add/Sub`:
 
-- Logic:  
+- Logic:
   $yᵢ' = yᵢ \oplus \text{Add/Sub}$
 - Behavior:
   - `Add/Sub = 0` → $yᵢ' = yᵢ$ → **Addition**
@@ -28,13 +30,14 @@ Each `yᵢ` passes through an XOR gate with `Add/Sub`:
 ---
 
 ### 2. **Initial Carry-In as +1 Offset**
+
 The carry-in to the least significant full adder is also set to `Add/Sub`:
 
 - Logic:
   - `Add/Sub = 0` → carry-in = 0 → **Normal addition**
   - `Add/Sub = 1` → carry-in = 1 → **Adds the +1 needed for two's complement**
 
-Together, this synthesizes:  
+Together, this synthesizes:
 $X - Y = X + (\overline{Y} + 1)$
 
 ---
@@ -74,12 +77,14 @@ This dual use of `Add/Sub` minimizes logic and maximizes audit clarity.
 ---
 
 ## 🚨 Overflow Considerations
+
 - Carry-out `c₄` may indicate overflow in signed arithmetic.
 - For unsigned operations, overflow occurs if `c₄ = 1` and MSB sum exceeds 1-bit capacity.
 
 ---
 
 ## 🔗 Extensions
+
 - Generalize to **n-bit ALU** by replicating XOR + FA pattern.
 - Integrate with **overflow detection** and **flag registers**.
 - Use semantic flags to annotate control flow and operand transformation.

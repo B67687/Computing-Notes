@@ -7,10 +7,11 @@ Inference rules are the **formal templates** that govern how valid conclusions a
 
 ## 🧠 Structural Principle
 
-> Inference rules operate **independently** of the content of the statements.  
+> Inference rules operate **independently** of the content of the statements.
 > They apply to **logical form**, not semantic meaning.
 
 This modularity makes them ideal for:
+
 - Proof construction
 - Predicate logic evaluation
 - Programming and AI reasoning
@@ -53,18 +54,20 @@ These extend propositional rules to include **quantifiers** and **variables**.
 
 ## 🧪 Audit Examples
 
-### Modus Ponens:
-- Premises:  
-  - $p$: "It is raining"  
+### Modus Ponens
+
+- Premises:
+  - $p$: "It is raining"
   - $p \rightarrow q$: "If it is raining, the ground is wet"
-- Conclusion:  
+- Conclusion:
   - $q$: "The ground is wet"
 
-### Disjunctive Syllogism:
-- Premises:  
-  - $p \lor q$: "It is either raining or sunny"  
+### Disjunctive Syllogism
+
+- Premises:
+  - $p \lor q$: "It is either raining or sunny"
   - $\neg p$: "It is not raining"
-- Conclusion:  
+- Conclusion:
   - $q$: "It is sunny"
 
 ---
@@ -75,4 +78,3 @@ These extend propositional rules to include **quantifiers** and **variables**.
 - **Modularity**: Enables chaining, nesting, and audit tracing
 - **Teachability**: Each rule is a reusable pattern for reasoning
 - **Cross-domain utility**: Applies to logic, ethics, programming, and law
-

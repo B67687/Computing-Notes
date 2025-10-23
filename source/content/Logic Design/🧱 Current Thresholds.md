@@ -2,30 +2,30 @@ In digital electronics, current thresholds define how much **electrical current*
 
 > [!note] Setting Boundaries
 > To ensure safe and reliable operation, we define **current thresholds** for input and output pins:
-> > How much **current** an output can safely **source** or **sink**  
+> > How much **current** an output can safely **source** or **sink**
 > > How much **current** an input can safely **draw** or **leak**
 
 ---
 
 ## 🧭 Naming Convention
 
-Each label follows the format:  
+Each label follows the format:
 
 $I_{XY} (B)$
 
 Where:
 
-$I$ = Current  
+$I$ = Current
 
-$X$ = Signal type  
-> **I** = Input  
-> **O** = Output  
+$X$ = Signal type
+> **I** = Input
+> **O** = Output
 
-$Y$ = Direction  
-> **H** = Source (current flows **out**)  
-> **L** = Sink (current flows **in**)  
+$Y$ = Direction
+> **H** = Source (current flows **out**)
+> **L** = Sink (current flows **in**)
 
-$B$ = Bound type  
+$B$ = Bound type
 > **max** = Maximum safe current  
 > **min** = Minimum guaranteed current (rarely used)
 
@@ -42,7 +42,7 @@ These thresholds define how much current a digital device can **handle or delive
 | $I_{OL}$<br>(max) | **Maximum** current the output can **sink** while maintaining LOW voltage |
 | $I_{OH}$<br>(max) | **Maximum** current the output can **source** while maintaining HIGH voltage |
 
-> These thresholds define **electrical stress limits**, not logic levels.  
+> These thresholds define **electrical stress limits**, not logic levels.
 > Exceeding them can cause voltage droop, signal distortion, or permanent damage.
 
 ---

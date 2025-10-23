@@ -6,6 +6,7 @@ This module explains how **overflow** works in 2’s complement binary arithmeti
 ## 🧠 What Is Overflow?
 
 In 2’s complement systems:
+
 - The **MSB (most significant bit)** represents the **sign**.
 - Overflow occurs when the result of an addition **flips the sign unexpectedly**, violating the expected polarity based on the operands.
 
@@ -87,5 +88,4 @@ In 2’s complement, **carry-out from MSB is ignored**. Only the **sign bit** de
 Overflow = (A_sign == B_sign) AND (Result_sign ≠ A_sign)
 ```
 
-This logic gate formula can be implemented directly in digital circuits.
-
+This logic gate formula can be implemented directly in digital circuits.`

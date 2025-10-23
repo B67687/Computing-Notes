@@ -1,4 +1,5 @@
 ## 🔹 Bit-Width (Data Width)
+
 Refers to the size of data units the processor natively handles.
 
 | Property            | Meaning                                  | 16-bit Example                        |
@@ -12,6 +13,7 @@ Refers to the size of data units the processor natively handles.
 ---
 
 ## 🔹 Addressable Space (Memory Reach)
+
 Refers to how many distinct memory locations the processor can reference.
 
 | Property            | Meaning                                  | 16-bit Example                        |
@@ -21,7 +23,6 @@ Refers to how many distinct memory locations the processor can reference.
 | Total memory reach  | Maximum directly addressable memory       | 64 KB (if no segmentation/paging)      |
 
 🧩 This is about **external reach** — how far the processor can point into memory.
-
 
 ---
 

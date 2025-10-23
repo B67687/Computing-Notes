@@ -9,12 +9,13 @@
 ---
 
 ## 🔹 Notes
+
 - **IEC (Binary)** uses powers of 1024: KiB, MiB, GiB, TiB, PiB, EiB.
 - **SI (Decimal)** uses powers of 1000: KB, MB, GB, TB, PB, EB.
-- **Why 16 vs 18:**  
-  - 16 EiB = 2^64 bytes in *binary units*.  
+- **Why 16 vs 18:**
+  - 16 EiB = 2^64 bytes in *binary units*.
   - 18.45 EB = same byte count in *decimal units*.
-- To convert bytes → bits: multiply by **8**.  
+- To convert bytes → bits: multiply by **8**.
   *Example:* 16 EiB × 8 = 128 Eib (exbibits).
 
 ---

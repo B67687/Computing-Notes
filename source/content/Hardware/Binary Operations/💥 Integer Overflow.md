@@ -2,7 +2,7 @@
 
 > [!Why we care]
 > Integer overflow is a semantic mismatch between mathematical expectation and hardware constraints.
-> 
+>
 > In modular arithmetic, overflow is benign. In fixed-width binary systems, it can flip signs, corrupt logic, or cause unintended wraparound.
 
 ---
@@ -29,11 +29,13 @@ Integer overflow occurs when the result of an arithmetic operation exceeds the *
 ## 🔁 Why It Happens
 
 ### ✅ Mathematical View
+
 - You expect: `7 + 1 = 8`
-- In modular arithmetic:  
+- In modular arithmetic:
   `8 mod 16 = 8` ✅ (still valid within modulus `2⁴ = 16`)
 
 ### ❌ Hardware View
+
 - 4-bit signed integers range from `−8 to +7`
 - `1000` is interpreted as `−8`
 - Result is **semantically incorrect**, even if **bitwise correct**
@@ -43,17 +45,20 @@ Integer overflow occurs when the result of an arithmetic operation exceeds the *
 ## ⚠️ Overflow Detection Logic
 
 ### 🔧 Signed Addition Overflow
+
 Occurs when:
+
 - Adding two **positive numbers** yields a **negative result**
 - Adding two **negative numbers** yields a **positive result**
 
 ### 🧠 Detection Formula
+
 ```
 Overflow = C_in_MSB ⊕ C_out_MSB
 ```
 
-
 Where:
+
 - `C_in_MSB`: carry into most significant bit
 - `C_out_MSB`: carry out from most significant bit
 
@@ -62,8 +67,8 @@ Where:
 ## 📊 Visual Anchor: 4-bit Signed Wraparound
 
 ```
-+7 → 0111 +8 → 1000 ← interpreted as −8 
-+9 → 1001 ← interpreted as −7 
-... 
++7 → 0111 +8 → 1000 ← interpreted as −8
++9 → 1001 ← interpreted as −7
+...
 +15 → 1111 ← interpreted as −1
 ```

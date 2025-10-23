@@ -34,6 +34,7 @@ We scan the multiplier **bit-pair-wise**: `Qᵢ Qᵢ₋₁`
 ## 🧮 Booth’s Multiplication Setup
 
 Let:
+
 - `A` = Accumulator (initially 0)
 - `Q` = Multiplier
 - `Q₋₁` = Extra bit (initially 0)
@@ -50,10 +51,10 @@ We perform `n` cycles (where `n` is the bit-width), and in each cycle:
 ## ⚙️ What It Solves
 
 > [!Success Criteria]
-> ✅ Handles signed numbers natively in 2’s complement  
-> ✅ Reduces redundant additions for long runs of `1`s  
-> ✅ Uses fewer arithmetic operations than naïve method  
-> ✅ Preserves sign via arithmetic shifts  
+> ✅ Handles signed numbers natively in 2’s complement
+> ✅ Reduces redundant additions for long runs of `1`s
+> ✅ Uses fewer arithmetic operations than naïve method
+> ✅ Preserves sign via arithmetic shifts
 > ✅ Avoids separate sign correction logic
 
 ---
@@ -61,10 +62,10 @@ We perform `n` cycles (where `n` is the bit-width), and in each cycle:
 ## ❌ What It Complicates
 
 > [!Tradeoffs]
-> ❌ Requires bit-pair scanning logic  
-> ❌ Needs an extra bit (`Q₋₁`) and accumulator  
-> ❌ Arithmetic shifts must preserve sign  
-> ❌ Final result must be interpreted carefully  
+> ❌ Requires bit-pair scanning logic
+> ❌ Needs an extra bit (`Q₋₁`) and accumulator
+> ❌ Arithmetic shifts must preserve sign
+> ❌ Final result must be interpreted carefully
 > ❌ Not intuitive for human learners
 
 ---
@@ -122,4 +123,3 @@ Booth’s algorithm is a **compression of signed multiplication logic**, not a c
 - Link to [Signed Multiplication Pipeline](vault://arithmetic/signed-mult)
 - Extend with [Transition Encoding Map](vault://arithmetic/booth-transitions)
 - Cross-reference [2’s Complement Motivation Module](vault://encoding/2s-complement-motivation)
-

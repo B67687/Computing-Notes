@@ -3,8 +3,8 @@
 
 > **Radix** (also called **base**) is the number of unique digits used in a positional numeral system.
 
-- Decimal → radix = 10 → digits: 0–9  
-- Binary → radix = 2 → digits: 0, 1  
+- Decimal → radix = 10 → digits: 0–9
+- Binary → radix = 2 → digits: 0, 1
 - Hexadecimal → radix = 16 → digits: 0–9, A–F
 
 ---
@@ -48,6 +48,7 @@ This principle underpins all positional number systems, from binary logic to his
 ---
 
 ### 📦 Suggested Vault Tags
+
 - `#radix`
 - `#numeral-systems`
 - `#positional-logic`

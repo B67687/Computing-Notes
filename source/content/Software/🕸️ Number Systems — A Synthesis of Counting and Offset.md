@@ -9,18 +9,17 @@ Thus, for the same point in the number space, the count is always 1 more than th
 
 Thus, for an array of numbers, the position, or index, is based off the distance from the starting position. This is the offset from the start, thus starting from 0, and the count is still the number of elements, which is one more than the index.
 
-## 💻 The Programming Problem 
+## 💻 The Programming Problem
 
 Then we have the problem of creating arrays of numbers, how do we call its creation?
 
 The first preference would have been to fix the range of numbers, for which we have the START and END. Let's say we want the range to be from 1 to 8, then we will just select START=1, END=8. And then we will select the constant offset between every next number, known as the STEP, because we step into the next number with this amount of steps. To simplify the example, we will use STEP=1, so we get 1 to 8.
 
 - Python by default uses step 1, because it is what most people were thinking of.
-    
 
 We get very nice calls, so now the other property is to know how many numbers there are. We do this by taking the difference between the start and end and dividing by the step to get the actual difference. Because the counting number is always 1 more than its difference, we add 1 to that difference to yield the counting number.
 
-## 💡 **The Optimization** 
+## 💡 **The Optimization**
 
 This may be fine for anyone, but for computer scientists, it is seen as a place that is worth to be optimized, as these calculations with a step of 1 will be done frequently, so we can squeeze as much as possible where we can.
 

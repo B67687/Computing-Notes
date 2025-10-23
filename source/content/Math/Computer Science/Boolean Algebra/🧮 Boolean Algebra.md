@@ -3,6 +3,7 @@
 It forms the theoretical foundation of **digital logic design** and **computer architecture**
 
 Invented by **George Boole** in the mid‑1800s, it’s used to:
+
 - Simplify logic circuits
 - Model digital systems
 - Prove equivalences between logic expressions
@@ -14,8 +15,8 @@ Invented by **George Boole** in the mid‑1800s, it’s used to:
 Variables:
 > Typically `A`, `B`, `X`, etc.
 
-Values:  
-  > $0 \rightarrow$ LOW / FALSE  
+Values:
+  > $0 \rightarrow$ LOW / FALSE
   > $1 \rightarrow$ HIGH / TRUE
 
 ---
@@ -52,25 +53,28 @@ Once a condition is true, repeating it doesn’t make it *truer*.
 
 This law reflects logical identity and guards against redundancy
 
-
 ### 🧲 Absorption and Consensus
 
 Absorption and Consensus is about **redundancy elimination**:
-- In `A ∨ (A ∧ B)`, the `A ∧ B` part is already “contained” within A.  
+
+- In `A ∨ (A ∧ B)`, the `A ∧ B` part is already “contained” within A.
 - In `A ∧ (A ∨ B)`, the `A ∨ B` part doesn’t restrict A any further.
 
 This is similar in Consensus Law
 
 ### 🔀 DeMorgan’s Law
+
 Apply recursively to nested expressions
 
 > [!example] Correcting a Misperception
 > There is a common misperception that these are equivalent
+>
 > ```
 > (a c′ + c d)' ≠ a′c · c′d′
 > ```
 >
 > Truth is they are different
+>
 > ```
 > (a c′ + c d)' = (a c′)' · (c d)' = (a′ + c)(c′ + d′)
 > ```
@@ -78,21 +82,25 @@ Apply recursively to nested expressions
 ---
 
 ## 🔄 Duality Principle
+
 Every Boolean expression remains valid if:
+
 - You swap **+** with **·**
 - Swap **0** with **1**
 This is called **duality**.
 
 Example:
+
 - Law: `A + 0 = A`
 - Dual: `A · 1 = A`
 
 ---
 
 ## ✂️ Simplification Rules
+
 1. Apply **laws** to remove redundant terms.
 2. Use **absorption**: `A + (A · B) = A`
-3. Use **De Morgan's Theorems**:  
-   - ¬(A · B) = ¬A + ¬B  
-   - ¬(A + B) = ¬A · ¬B  
+3. Use **De Morgan's Theorems**:
+   - ¬(A · B) = ¬A + ¬B
+   - ¬(A + B) = ¬A · ¬B
 1. Aim for minimal number of operations to reduce gate count.

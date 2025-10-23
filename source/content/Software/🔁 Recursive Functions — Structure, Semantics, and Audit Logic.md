@@ -1,5 +1,6 @@
 
 ## 📌 Motivation
+
 Recursion is a foundational technique in algorithm design, enabling elegant solutions to problems that exhibit self-similarity. A recursive function solves a problem by **reducing it to smaller instances of itself**, often leading to concise, expressive, and mathematically aligned code.
 
 ---
@@ -7,15 +8,18 @@ Recursion is a foundational technique in algorithm design, enabling elegant solu
 ## 🧠 Core Anatomy of Recursion
 
 ### 🧩 Base Case
+
 - The **termination condition** that stops recursion.
 - Must be simple and directly solvable.
 - Prevents infinite loops and stack overflows.
 
 ### 🧩 Recursive Case
+
 - The part where the function **calls itself** with a smaller or simpler input.
 - Should always move toward the base case.
 
 ### 🧩 Call Stack
+
 - Each recursive call is pushed onto the stack.
 - When the base case is hit, calls begin to **unwind**, returning results back up the chain.
 
@@ -57,4 +61,3 @@ function factorial(n):
 - **Divide and Conquer**: Break problem into subproblems, solve recursively, combine.
 - **Backtracking**: Explore paths recursively, undo when invalid.
 - **Structural Mapping**: Traverse or transform data structures recursively.
-

@@ -32,15 +32,15 @@ graph TD
 ```
 
 > [!info]
+>
 > - **Inputs:** $n$ binary signals
 > - **Output:** 1
 
-
 > [!example] Notes
 > MUX is often called a **data selector**.
-> 
+>
 > Can be built using logic gates or hierarchical MUX trees.
-> 
+>
 > In programming, MUX behavior resembles a **switch-case** or **if-else chain**
 
 ---
@@ -51,4 +51,3 @@ graph TD
 - Function selection in ALUs
 - Signal switching in communication systems
 - Logic minimization and conditional operations
-

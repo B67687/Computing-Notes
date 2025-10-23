@@ -1,5 +1,6 @@
 
 ## 📌 Motivation
+
 Tail Call Optimisation is a compiler/runtime technique that transforms certain recursive calls into **constant-space operations**. It allows deep recursion without stack overflow by **reusing the current stack frame** when the recursive call is the final action.
 
 ---
@@ -7,6 +8,7 @@ Tail Call Optimisation is a compiler/runtime technique that transforms certain r
 ## 🧠 Core Concept
 
 ### 🧩 Tail Call
+
 A **tail call** occurs when a function calls another (or itself) as its **last operation**, with no further computation afterward.
 
 ```scheme
@@ -18,6 +20,7 @@ A **tail call** occurs when a function calls another (or itself) as its **last o
 ```
 
 ### 🧩 Optimization Mechanism
+
 - Normally, each recursive call adds a new stack frame.
 - With TCO, the compiler **reuses** the current frame:
   - Updates parameters
@@ -51,4 +54,3 @@ A **tail call** occurs when a function calls another (or itself) as its **last o
 - Not supported in all languages (e.g. Python, Java)
 - Debugging becomes harder (stack trace is flattened)
 - Only applies to **tail calls**, not general recursion
-

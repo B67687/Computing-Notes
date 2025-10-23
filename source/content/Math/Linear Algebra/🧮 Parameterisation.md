@@ -31,14 +31,15 @@ y &= a
 $$
 
 Now it's clear:
+
 - $a$ is the **argument** we plug in
 - $x$, $y$ are **computed from** $a$
 
-> [!tip]  
+> [!tip]
 > This is called the **parametric form**.
-> 
-> Which expresses the solution set as a function of one or more free parameters.  
-> 
+>
+> Which expresses the solution set as a function of one or more free parameters.
+>
 > It’s ideal for generalisation, manipulation, and geometric interpretation.
 
 ---

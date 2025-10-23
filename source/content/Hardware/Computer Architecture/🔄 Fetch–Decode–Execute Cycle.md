@@ -1,7 +1,7 @@
 
-
 ## 📜 Definition
-The **Fetch–Decode–Execute cycle** is the repeating process a CPU uses to run instructions.  
+
+The **Fetch–Decode–Execute cycle** is the repeating process a CPU uses to run instructions.
 It starts when the computer powers on and continues until shutdown, looping billions of times per second.
 
 ---
@@ -9,16 +9,19 @@ It starts when the computer powers on and continues until shutdown, looping bill
 ## 🧩 Stages
 
 ### 1️⃣ Fetch
+
 - **PC → MAR**: Program Counter (PC) holds the address of the next instruction; copied into the Memory Address Register (MAR).
 - **Memory Read**: Control Unit (CU) signals main memory to send the instruction at that address.
 - **MDR → CIR**: Instruction is placed in the Memory Data Register (MDR), then copied to the Current Instruction Register (CIR).
 - **PC++**: PC increments to point to the next instruction.
 
 ### 2️⃣ Decode
+
 - CU interprets the **opcode** (operation) and identifies any **operands** (data or addresses).
 - Determines which CPU components (ALU, registers, memory) will be involved.
 
 ### 3️⃣ Execute
+
 - The CPU carries out the instruction:
   - Arithmetic/logic via ALU
   - Data transfer between registers/memory
@@ -28,6 +31,7 @@ It starts when the computer powers on and continues until shutdown, looping bill
 ---
 
 ## 🛠 Key Registers in Play
+
 | Register | Role |
 |----------|------|
 | **PC** (Program Counter) | Address of next instruction |
@@ -38,6 +42,7 @@ It starts when the computer powers on and continues until shutdown, looping bill
 ---
 
 ## ⚡ Performance Notes
+
 - **Clock Speed**: Determines how many cycles per second.
 - **Pipelining**: Modern CPUs overlap stages for multiple instructions to improve throughput.
 - **Cache**: Reduces fetch latency by storing frequently used instructions/data close to the CPU.
@@ -45,6 +50,7 @@ It starts when the computer powers on and continues until shutdown, looping bill
 ---
 
 ## 📌 Related Notes
+
 - [[Machine Code]]
 - [[Bytecode]]
 - [[Instruction Pipelining]]

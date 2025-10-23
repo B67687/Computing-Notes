@@ -1,6 +1,6 @@
 ## 📘 Overview
 
-**Closure** refers to a property of a set under a specific operation:  
+**Closure** refers to a property of a set under a specific operation:
 > A set is *closed* under an operation if applying that operation to elements of the set **always produces an element still in the set**.
 
 Closure is foundational to algebra, number theory, logic, and audit systems—it ensures **internal consistency** and **predictable behavior**.
@@ -9,7 +9,7 @@ Closure is foundational to algebra, number theory, logic, and audit systems—it
 
 ## 🧠 Formal Definition
 
-Let $S$ be a set and $\ast$ be a binary operation.  
+Let $S$ be a set and $\ast$ be a binary operation.
 Then $S$ is **closed under $\ast$** if:
 
 $$
@@ -32,11 +32,13 @@ $$
 
 ## 🔍 Closure vs Non-Closure
 
-### ✅ Closed:
+### ✅ Closed
+
 - $\mathbb{Z}$ under addition: $3 + 5 = 8$
 - $\mathbb{Q}$ under multiplication: $\frac{2}{3} \cdot \frac{3}{4} = \frac{1}{2}$
 
-### ❌ Not Closed:
+### ❌ Not Closed
+
 - $\mathbb{Z}$ under division: $1 \div 2 = 0.5 \notin \mathbb{Z}$
 - $\mathbb{R}$ under exponentiation: $(-1)^{\sqrt{2}}$ is complex
 
@@ -76,4 +78,3 @@ $$
 - Scaffold visual diagrams for closure vs non-closure
 - Map closure violations to overflow and type errors in programming
 - Extend to logical closure in inference systems and ethical reasoning
-

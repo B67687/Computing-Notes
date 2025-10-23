@@ -2,7 +2,7 @@
 
 > [!Why we care]
 > LEDs are PN junction diodes that emit light through electroluminescence. But unlike regular diodes, they’re engineered to convert electrical energy into visible photons efficiently.
-> 
+>
 > This note scaffolds the physics, material choices, and design optimizations that make LEDs possible—and powerful.
 
 ---
@@ -33,10 +33,12 @@
 ## 🧱 Fabrication Techniques
 
 ### 🔹 Epitaxial Growth
+
 - Thin layers of semiconductor are grown on substrates like **sapphire** or **SiC**.
 - Ensures crystal alignment and minimal defects.
 
 ### 🔹 Doping and Junction Formation
+
 - Controlled doping creates the **P-type and N-type** regions.
 - Junction is tuned to maximize recombination in the **active layer**.
 

@@ -14,12 +14,13 @@ Because we write **left to right, top to bottom**, matrix reduction follows the 
 
 - Start at the **top-left**
 - Move **rightward** and **downward**
-- At each step, keep the current coefficient representing the variable and **eliminate the rest** above and below it 
+- At each step, keep the current coefficient representing the variable and **eliminate the rest** above and below it
 
 > [!tip] The Pivot
 > The coefficient of the variable we keep is called the **pivot**
-> 
+>
 > The term “pivot” comes from its **role** in elimination:
+>
 > - It’s the **anchor** used to eliminate entries below (and in RREF, above) it.
 > - In Gaussian elimination, we “pivot” around this entry to clear its column.
 > - It acts like a **hinge** or **fulcrum**—the transformation rotates around it.
@@ -27,11 +28,12 @@ Because we write **left to right, top to bottom**, matrix reduction follows the 
 This naturally leads to a **staggered structure** that looks like an echelon arranged by row, thus it is called **row-echelon form**, or **REF** for short
 
 > [!note] What is "Echelon"?
-> The term **echelon** comes from military formation—soldiers arranged in a **staggered diagonal pattern**.  
+> The term **echelon** comes from military formation—soldiers arranged in a **staggered diagonal pattern**.
 
 ---
+
 ## 🔄 Reduction Pipeline
- 
+
 Reducing both directions at once is rather disorienting, thus we have preferred to go in **one direction preferred at a time**
 
 Since we start top-left, we naturally eliminate **downwards** first (forward-substitution), to remove all the variables **below the leading variable of each row**
@@ -91,10 +93,12 @@ Here’s a robust tactic for reducing any matrix:
 5. 🧼 For RREF: After reaching REF, eliminate entries **above** each pivot and normalize pivots to 1.
 
 > [!note]
-> **Normalize each pivot to 1 immediately** before using it to eliminate other rows  
+> **Normalize each pivot to 1 immediately** before using it to eliminate other rows
+>
 > - This leads to cleaner arithmetic and aligns naturally with RREF goals.
-> 
-> **Favor additive operations over scalar multiplication**  
+>
+> **Favor additive operations over scalar multiplication**
+>
 > - Instead of computing $cR_1$, use $R_2 + cR_1$ or $R_1 + cR_2$ to eliminate—this keeps the original row intact and avoids unnecessary scaling.
 
 ---
@@ -113,16 +117,16 @@ $$
 
 Step-by-step:
 
-1. Normalize $R_1$:  
+1. Normalize $R_1$:
    $$ R_1 \rightarrow \frac{1}{3}R_1 $$
 
-2. Eliminate below using clean multiples:  
+2. Eliminate below using clean multiples:
    $$ R_2 + 5R_1,\quad R_3 + 3R_1 $$
 
-3. Normalize $R_2$:  
+3. Normalize $R_2$:
    $$ R_2 \rightarrow \frac{3}{4}R_2 $$
 
-4. Eliminate below again:  
+4. Eliminate below again:
    $$ R_3 - 8R_2 $$
 
 Final REF:
@@ -145,6 +149,7 @@ $$
 After reducing the augmented matrix (via REF or RREF), there are **three possible outcomes**:
 
 ### ✅ 1. Unique Solution
+
 - Every variable has a pivot.
 - No contradictions.
 - Final matrix has one solution.
@@ -158,12 +163,13 @@ After reducing the augmented matrix (via REF or RREF), there are **three possibl
 > \end{bmatrix}
 > $$
 
-→ Solution:  
+→ Solution:
 $x = 2$, $y = -1$, $z = 3$
 
 ---
 
 ### ♾️ 2. Infinitely Many Solutions
+
 - Some variables are **free** (no pivot in their column).
 - No contradictions.
 - Final matrix leads to parametric form.
@@ -177,18 +183,19 @@ $x = 2$, $y = -1$, $z = 3$
 > \end{bmatrix}
 > $$
 
-→ Let $z = t$ (free variable)  
-Then:  
-$x = 5 - 2t$  
+→ Let $z = t$ (free variable)
+Then:
+$x = 5 - 2t$
 $y = 3 + t$
 
-→ Parametric solution:  
+→ Parametric solution:
 $(x, y, z) = (5 - 2t,\ 3 + t,\ t)$
 
 ---
 
 ### ❌ 3. No Solution
-- A row like:  
+
+- A row like:
   $$ [0 \quad 0 \quad 0 \mid c] \quad \text{where } c \neq 0 $$
 - This represents a contradiction (e.g., $0 = 5$).
 - System is **inconsistent**.
@@ -202,5 +209,5 @@ $(x, y, z) = (5 - 2t,\ 3 + t,\ t)$
 > \end{bmatrix}
 > $$
 
-→ Contradiction in last row: $0 = 7$  
+→ Contradiction in last row: $0 = 7$
 → ❌ No solution

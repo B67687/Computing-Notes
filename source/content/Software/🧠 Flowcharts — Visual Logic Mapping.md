@@ -4,9 +4,9 @@ Flowcharts are graphical representations of processes, algorithms, or systems us
 
 ## 🔹 Core Purpose
 
-- Clarify the structure and logic of algorithms  
-- Aid in debugging, optimization, and documentation  
-- Communicate processes across technical and non-technical audiences  
+- Clarify the structure and logic of algorithms
+- Aid in debugging, optimization, and documentation
+- Communicate processes across technical and non-technical audiences
 - Separate internal computation from external interaction
 
 ---
@@ -21,9 +21,9 @@ Flowcharts are graphical representations of processes, algorithms, or systems us
 | 🟦 `Input/Output` | External interaction | Parallelogram     | Represents user ↔ system data exchange |
 | ➡ `Arrow`     | Flow of control          | Directed line     | Indicates execution sequence |
 
-> [!note] 🧠 Note:  
+> [!note] 🧠 Note:
 > `Process` blocks handle internal logic (e.g., calculations, function calls)
-> 
+>
 > `Input/Output` blocks represent conceptual interfaces—such as user input or system output—not return values or internal data flow.
 
 ---
@@ -56,29 +56,29 @@ Flowcharts are graphical representations of processes, algorithms, or systems us
 
 ## 🧰 Tips for Designing Flowcharts
 
-- ✅ Keep symbols consistent and clearly labeled  
-- ✅ Use directional arrows to guide logical flow  
-- ✅ Avoid crossing lines—use connectors or off-page references  
-- ✅ Modularize complex logic into sub-flowcharts or linked diagrams  
-- ✅ Align elements for visual clarity and cognitive ease  
+- ✅ Keep symbols consistent and clearly labeled
+- ✅ Use directional arrows to guide logical flow
+- ✅ Avoid crossing lines—use connectors or off-page references
+- ✅ Modularize complex logic into sub-flowcharts or linked diagrams
+- ✅ Align elements for visual clarity and cognitive ease
 - ✅ Use color or emoji sparingly to highlight key paths or decisions
 
 ---
 
 ## 🧩 Use Cases
 
-- Algorithm design and debugging  
-- System workflows and process automation  
-- Business process modeling  
-- Educational logic mapping and teaching aids  
+- Algorithm design and debugging
+- System workflows and process automation
+- Business process modeling
+- Educational logic mapping and teaching aids
 - Decision support systems
 
 ---
 
 ## 🧭 Future Extensions
 
-- [ ] Add hover-tooltips for symbol definitions using callouts or embedded HTML  
-- [ ] Embed SVG diagrams for interactive flowchart visualization  
-- [ ] Link decision nodes to truth tables or Boolean expressions  
-- [ ] Create reusable flowchart templates for algorithmic patterns  
+- [ ] Add hover-tooltips for symbol definitions using callouts or embedded HTML
+- [ ] Embed SVG diagrams for interactive flowchart visualization
+- [ ] Link decision nodes to truth tables or Boolean expressions
+- [ ] Create reusable flowchart templates for algorithmic patterns
 - [ ] Integrate with [[Truth Tables]] and [[Control Flow in Programming]]

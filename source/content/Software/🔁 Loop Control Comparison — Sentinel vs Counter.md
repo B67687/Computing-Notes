@@ -2,6 +2,7 @@
 ---
 
 ### 🛑 Sentinel-Controlled Loop
+
 Used when the number of iterations is `unknown`. Loop continues until a special value (sentinel) is encountered.
 
 ```python
@@ -21,6 +22,7 @@ print("Total sum:", total)
 ---
 
 ### 🔢 Counter-Controlled Loop
+
 Used when the number of iterations is `known in advance`. Loop runs a fixed number of times.
 
 ```python
@@ -47,4 +49,3 @@ print("Total sum:", total)
 | Risk                  | Sentinel misplacement      | Off-by-one errors           |
 
 > 🧩 Use sentinel loops for **indefinite repetition**, and counter loops for **bounded iteration**. Document clearly to avoid semantic drift.
-

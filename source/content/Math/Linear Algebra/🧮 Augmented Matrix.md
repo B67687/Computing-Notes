@@ -56,10 +56,12 @@ The last column (after the vertical bar) contains the constants from the right-h
 ## 🧠 Why Not Just Call It “Full Matrix”?
 
 Because linear algebra is about **precision**:
+
 - “Matrix” = structure of coefficients
 - “Augmented matrix” = structure + constraints
 
 This distinction becomes critical when:
+
 - Performing row reduction (Gaussian elimination)
 - Checking consistency (e.g., rank comparison)
 - Interpreting solution sets (e.g., null space vs full solution)

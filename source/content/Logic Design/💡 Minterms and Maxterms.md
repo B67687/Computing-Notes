@@ -10,10 +10,11 @@ A function’s output is either **ON** or **OFF**
 
 > [!tip] Defining a System
 > We can represent the system through
+>
 > - All input combinations that turn it **ON**
 > - Or all combinations that turn it **OFF**
 
-Defining one automatically defines the other—this is the [[Principle of Duality]]  
+Defining one automatically defines the other—this is the [[Principle of Duality]]
 
 We only need to choose one side to work with.
 
@@ -23,7 +24,7 @@ We only need to choose one side to work with.
 
 When designing systems that has active states——`ON` and `OFF`——we have to determine which **state we want to focus on** that will **represent the behaviour of the system**
 > As the same system cannot be represented by both `ON` and `OFF` at the same time
-> 
+>
 > They must be **represented separately**
 
 For us, we would prefer to think of **existence** as a more meaningful and important state than **non-existence**
@@ -69,7 +70,7 @@ Each row of such a table contains a **unique input combination** of the system�
 
 > [!info] Strictness of Combinations
 > Thus each `ON` state of the system can be represented by **strict combination of all its corresponding inputs**
-> 
+>
 > And each `OFF` state of the system can be represented by **lenient combination of all its corresponding inputs**
 
 These concepts will be coined and explained in further detail in the below sub-sections
@@ -77,13 +78,14 @@ These concepts will be coined and explained in further detail in the below sub-s
 ---
 
 ## 🔹 Minterm
+
 The **strict combination of all the corresponding inputs** that causes the output to have an `ON` state, is called a `Minterm`
 
 > [!info] Etymology
 > It is also the **minimum combination-of-inputs condition** for the system to be considered `ON`
 >
-> Thus, the **term** representing such a combination of inputs is called the **Minimum Term** 
-> 
+> Thus, the **term** representing such a combination of inputs is called the **Minimum Term**
+>
 > Or the `Minterm`
 
 **Strictness** is represented by the `AND` operator, so its inputs will be `AND-ed` to represent the `ON` state
@@ -91,8 +93,8 @@ The **strict combination of all the corresponding inputs** that causes the outpu
 Since `AND` requires all its inputs to be `True` for the `AND` expression to be `True`, the inputs that are `0` in that row are represented through the `complement` of that input variable
 
 > [!example]
-> For $A=1$, $B=0$, $C=1$, the minterm is:  
-> $$A \cdot B' \cdot C$$  
+> For $A=1$, $B=0$, $C=1$, the minterm is:
+> $$A \cdot B' \cdot C$$
 > This is only true when A is `True`, B is `False`, and C is `True`
 
 ---
@@ -104,8 +106,8 @@ The **lenient combination of all the corresponding inputs** that causes the outp
 > [!info] Etymology
 > It is also the **maximum combination-of-inputs condition** for the system to be considered `OFF`
 >
-> Thus, the **term** representing such a combination of inputs is called the **Maximum Term** 
-> 
+> Thus, the **term** representing such a combination of inputs is called the **Maximum Term**
+>
 > Or the `Maxterm`
 
 **Lenience** is represented by the `OR` operator, so its inputs will be `OR-ed` to represent the `OFF` state
@@ -113,8 +115,8 @@ The **lenient combination of all the corresponding inputs** that causes the outp
 Since `OR` requires none of its inputs to be `True` for the `OR` expression to be `False`, the inputs that are `1` in that row are represented through the `complement` of that input variable
 
 > [!example]
-> For $A=1$, $B=0$, $C=1$, the maxterm is:  
-> $$A' + B + C'$$  
+> For $A=1$, $B=0$, $C=1$, the maxterm is:
+> $$A' + B + C'$$
 > This is only false when A is `True`, B is `False`, and C is `True`
 
 ---
@@ -134,12 +136,12 @@ We can represent the system itself through the **combinations of all of either**
 
 > [!tip] The System Represented Through `ON` States
 > Since each separate condition for the `ON` state is `strict`, we only **need either of them** for the whole system to be `ON`
-> 
+>
 > > Thus, the representation of the system through all the `ON` states is `lenient`
 
 > [!tip] The System Represented Through `OFF` States
 > Since each separate condition for the `OFF` state is `lenient`, we must **exclude all of them** for the whole system to be `OFF`
-> 
+>
 > > Thus, the representation of the system through all the `OFF` states is `strict`
 
 These concepts will be coined and explained in further detail in the below sub-sections
@@ -169,7 +171,7 @@ The `Sum of Minterms` will be represented and calculated like this
 
 $$
 \begin{align}
-F(A, B, C) &= \sum m(1,3,4,6,8) \\ 
+F(A, B, C) &= \sum m(1,3,4,6,8) \\
 &= m_1 + m_3 + m_4 + m_6 + m_8 \\
 &= A'B'C' + A'BC' + A'BC + AB'C + ABC
 \end{align}
@@ -178,16 +180,16 @@ $$
 > This is read as:
 >
 > The general function, `F`, with input variables, `A`,`B`,`C`, is the sum, `Σ`, of minterms, `m`, in rows `1`,`3`,`4`,`6`,`8`
- 
+
 This **full exhaustive form** is known as the **Canonical Form**, as it contains all the **terms** that contain all the **input variables**
 
 This expression is thus more aptly known as the `Sum of Products`, or `SOP` for short
 > [!Warning]
 > Take note that *Sum* here is **NOT the arithmetic sum** used in Maths, but a **borrowed symbol** to represent `OR` in Logic
-> 
+>
 > The **structural similarity** between logical `OR` and arithmetic sum——such as *associativity*, *commutativity*, and *distributivity*——is why the symbol was borrowed
 
-Any further simplification of `Sum of Products` can be done through an optimised method, leveraging visualisation, called [[🗺️ Karnaugh Maps | Karnaugh Maps]] 
+Any further simplification of `Sum of Products` can be done through an optimised method, leveraging visualisation, called [[🗺️ Karnaugh Maps | Karnaugh Maps]]
 
 ---
 
@@ -214,26 +216,25 @@ The `Product of Maxterms` will be represented and calculated like this
 
 $$
 \begin{align}
-F(A, B, C) &= \prod M(2,5,7) \\ 
+F(A, B, C) &= \prod M(2,5,7) \\
 &= M_2 \cdot M_5 \cdot M_7 \\
 &= (A + B + C') \cdot (A + B' + C) \cdot (A' + B + C)
 \end{align}
 $$
 
 > This is read as:
-> 
+>
 > The general function, `F`, with input variables, `A`,`B`,`C`, is the product, `Π`, of maxterms, `M`, in rows `2`,`5`,`7`
 
 This **full exhaustive form** is known as the **Canonical Form**, as it contains all the **terms** that contain all the **input variables**
 
 This expression is thus more aptly known as the `Product of Sums`, or `POS` for short
 > [!Warning]
-> Take note that *Product* here is **NOT the arithmetic product** used in Maths, but a **borrowed symbol** to represent `AND` in Logic 
+> Take note that *Product* here is **NOT the arithmetic product** used in Maths, but a **borrowed symbol** to represent `AND` in Logic
 >
 > The **structural similarity** between logical `AND` and arithmetic product——such as *associativity*, *commutativity*, and *distributivity*——is why the symbol was borrowed
 
 Any further simplification of `Product of Sums` can be done through an optimised method, leveraging visualisation, called [[🗺️ Karnaugh Maps | Karnaugh Maps]]
-
 
 ---
 
@@ -244,7 +245,7 @@ Both `SOP` and `POS` represent the same function—just from opposite perspectiv
 > [!info] **De Morgan’s Laws**
 > De Morgan's Laws allow us to interchange `AND`/`OR` operations transform between `SOP` and `POS`
 >
-> $$(A \cdot B)' = A' + B'$$  
+> $$(A \cdot B)' = A' + B'$$
 > $$(A + B) = A' \cdot B'$$
 
 ---

@@ -1,5 +1,6 @@
 
 ## 📍 Common Suffixes (Intel‑Style)
+
 | Suffix | Base / Meaning        | Example   | Decimal Value | Notes |
 |--------|-----------------------|-----------|---------------|-------|
 | `h`    | Hexadecimal (base‑16) | `4Ah`     | 74            | Add a leading `0` if starting with `A–F` → `0Ah` |
@@ -10,6 +11,7 @@
 ---
 
 ## 💡 Prefix Alternatives
+
 | Prefix | Meaning / Syntax Origin | Example   | Decimal Value |
 |--------|-------------------------|-----------|---------------|
 | `0x`   | Hex (C‑style)           | `0x4A`    | 74            |
@@ -19,6 +21,7 @@
 ---
 
 ## 🛠 Assembler Quirks
+
 - **MASM/TASM:** Strict `h`, `b`, `o` usage; needs a leading `0` if the hex value starts with a letter.
 - **NASM/FASM:** Accepts both suffix (`h`) and C‑style (`0x`) notations.
 - **GAS (GNU Assembler):** Prefers `$` for constants (AT&T style), no `h` suffix.

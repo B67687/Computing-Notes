@@ -18,14 +18,15 @@
 ## ⚡ Breakdown Mechanisms
 
 ### 🔬 Zener Breakdown
+
 - Occurs in **heavily doped diodes** with narrow depletion regions
 - High electric field causes **quantum tunneling** of electrons
 - Used intentionally in **Zener diodes** for voltage regulation
 
 ### 🌪️ Avalanche Breakdown
+
 - Occurs in **lightly doped diodes** with wider depletion regions
 - Minority carriers gain enough energy to **knock loose more electrons**
 - Leads to a **chain reaction** of carrier multiplication
 
 > 🧠 Both mechanisms allow reverse current to flow—but only after overcoming a **critical voltage threshold**.
-

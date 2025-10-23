@@ -11,13 +11,16 @@
 ---
 
 ## 🏹 Reasons for Arrow Direction
+
 The symbols chosen for visual and logical contrast, not physical necessity
 
 ## 🔼 NAND — Sheffer Stroke — *Strict, Upward, Energetic*
+
 Based on **AND**, which requires **all inputs to be true** — a strict condition.
 
 > [!tip] Motivation for Pointing Up
 > The upward stroke $\uparrow$ symbolizes:
+>
 > - **Logical tension** — all conditions must be fulfilled
 > - **Energetic lift** — negating strictness requires effort
 > - **Constraint-breaking** — NAND lifts out of grounded certainty
@@ -25,10 +28,12 @@ Based on **AND**, which requires **all inputs to be true** — a strict conditio
 > NAND points up because it negates a strict, high-effort condition — it follows from the rigidity of AND, in the complement way
 
 ## 🔽 NOR — Peirce Arrow — *Loose, Downward, Grounded*
+
 Based on **OR**, which accepts **any input being true** — a loose condition.
 
 > [!tip] Motivation for Pointing Down
 > The downward arrow $\downarrow$ symbolizes:
+>
 > - **Logical ease** — minimal fulfillment suffices
 > - **Grounded collapse** — negating looseness returns to constraint
 > - **Down-to-earth minimalism** — NOR flattens possibility

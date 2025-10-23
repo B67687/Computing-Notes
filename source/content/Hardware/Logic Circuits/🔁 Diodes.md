@@ -1,4 +1,4 @@
-Diodes are built from PN junctions—where [[⚡Semiconductor Doping| N-type and P-type semiconductors]] meet. 
+Diodes are built from PN junctions—where [[⚡Semiconductor Doping| N-type and P-type semiconductors]] meet.
 
 Understanding **which way current flows**, and **why semiconductors are used** instead of charged materials, is key to mastering electronics and abstraction-layer clarity.
 
@@ -34,4 +34,3 @@ Understanding **which way current flows**, and **why semiconductors are used** i
 - Controlled **forward and reverse bias behavior**
 - Integration into **logic gates**, **amplifiers**, and **digital ICs**
 - Scalability for **CMOS**, **RF**, and **power electronics**
-

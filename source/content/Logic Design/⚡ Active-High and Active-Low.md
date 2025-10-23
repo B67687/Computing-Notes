@@ -1,10 +1,11 @@
 > [!Why we invented this]
-> Digital signals are binary—either `1` or `0`.  
+> Digital signals are binary—either `1` or `0`.
 > But what those values **mean** depends on how the circuit is designed.
 >
 > We use **Active High** and **Active Low** to define whether a signal is considered “active” when it’s **electrically high** or **electrically low**.
 
 > This is crucial for:
+>
 > - Naming signals (e.g., `RESET`, `ENABLE`, `READY̅`)
 > - Designing logic gates and control flows
 > - Interpreting truth tables and waveform behavior
@@ -19,7 +20,7 @@
 | **Active Low**  | Signal is considered active when it is **electrically low** (`0`) |
 
 > [!Tip]
-> “Active” means the signal is **interpreted as meaningful**—either triggering behavior (control) or indicating status (output).  
+> “Active” means the signal is **interpreted as meaningful**—either triggering behavior (control) or indicating status (output).
 > This interpretation depends on the signal’s **polarity**, not just its voltage level.
 
 ---
@@ -33,7 +34,7 @@
 | `READY`     | `READY = 1` → data is ready      | `READY = 0` → data is ready      |
 
 > [!Note]
-> Output flags like `ODD` or `EVEN` are **status indicators**, not control signals.  
+> Output flags like `ODD` or `EVEN` are **status indicators**, not control signals.
 > Their polarity is defined by naming (e.g., `ODD_N`) if inversion is required.
 
 ---
@@ -41,7 +42,7 @@
 ### 📊 Truth Table Interpretation
 
 > [!Audit Trigger]
-> A signal’s **active polarity** determines when the circuit responds to other inputs.  
+> A signal’s **active polarity** determines when the circuit responds to other inputs.
 > You can detect this by analyzing when the output starts reacting to changes in other signals.
 
 #### Example 1: Active High Enable
@@ -73,7 +74,7 @@
 ✅ **Enable is active low**
 
 > [!Tip]
-> Always ask: *When does the output start responding to other inputs?*  
+> Always ask: *When does the output start responding to other inputs?*
 > That’s when the enable signal is “active.”
 
 ---
@@ -87,7 +88,7 @@
 | `SIGNAL̅`     | Active Low (overbar notation, common in schematics) |
 
 > [!Audit Flag]
-> Always check whether a signal is **active high or low** before interpreting its behavior.  
+> Always check whether a signal is **active high or low** before interpreting its behavior.
 > Never assume `1 = active` or `0 = inactive` without polarity context.
 
 ---
@@ -95,6 +96,7 @@
 ### 🧠 Visual Analogy
 
 > Imagine a smart light:
+>
 > - If it's **active high**, it turns on when the control signal is high (`1`)
 > - If it's **active low**, it turns on when the control signal is low (`0`)
 >
@@ -108,6 +110,7 @@
 > Active High → signal is active when HIGH (1)
 > Active Low → signal is active when LOW (0)
 > ```
+>
 > - This affects how we name, interpret, and implement logic
 > - It does **not** change the underlying truth table—just the **semantic layer**
 

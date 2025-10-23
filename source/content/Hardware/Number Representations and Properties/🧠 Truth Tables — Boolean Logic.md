@@ -101,4 +101,3 @@ To add more operators or multi-bit logic, duplicate the table structure and exte
 - `A ⊕ B` → Symmetric Difference: \( A \triangle B \)
 
 ---
-

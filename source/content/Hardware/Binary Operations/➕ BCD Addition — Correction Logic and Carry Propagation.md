@@ -6,6 +6,7 @@
 > But binary addition can produce results up to $18$ ($9 + 9$), which is `10010` in binary—**not a valid BCD digit**.
 >
 > So we need a correction mechanism to:
+>
 > - Skip invalid BCD codes ($1010$ to $1111$)
 > - Propagate carry to the next decimal digit
 > - Preserve decimal correctness across multiple digits
@@ -26,6 +27,7 @@
 > If the 4-bit sum exceeds $1001$ (i.e., decimal $9$), **add $0110$ (decimal $6$)** to correct it.
 
 ### Why Add 6?
+
 - It pushes the sum into the next valid BCD range (`arithmetic modulus`)
 - It triggers a carry into the next digit
 - It skips the 6 invalid codes ($1010$ to $1111$)
@@ -44,7 +46,8 @@
 - Lower 4 bits: `0010` (BCD for 2)
 - Carry bit: `1` → must propagate
 
-### Apply Correction:
+### Apply Correction
+
 ```plaintext
  0010 + 0110 = 1000 (BCD for 8)
 ```
@@ -56,6 +59,7 @@
 ## 🔁 Multi-Digit BCD Addition
 
 For each digit:
+
 1. Add the two BCD digits
 2. If result > $1001$, add $0110$
 3. If result ≥ $16$ (i.e., 5-bit overflow), propagate carry
@@ -85,6 +89,5 @@ For each digit:
 ## 🧠 Closing Insight
 
 > [!Note]
-> BCD addition is not just binary addition—it’s **binary addition with semantic correction**.  
+> BCD addition is not just binary addition—it’s **binary addition with semantic correction**.
 > The addition of $6$ is a modular skip over invalid encodings, ensuring that each 4-bit group remains a valid decimal digit.
-

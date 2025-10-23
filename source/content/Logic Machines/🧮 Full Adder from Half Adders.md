@@ -1,4 +1,5 @@
 A full adder computes the sum of three binary inputs: `A`, `B`, and `C_in` (carry-in), producing:
+
 - `Sum`
 - `C_out` (carry-out)
 
@@ -9,6 +10,7 @@ This notebook shows how to construct a full adder using **two half adders** and 
 ## 🔧 Logic Expressions
 
 ### Full Adder Logic
+
 - `Sum = A ⊕ B ⊕ Cin`
 - `Cout = (A ⊕ B)·Cin + A·B`
 
@@ -17,18 +19,21 @@ This notebook shows how to construct a full adder using **two half adders** and 
 ## 🧱 Construction Using Half Adders
 
 ### Step 1: First Half Adder
+
 - **Inputs**: `A`, `B`
 - **Outputs**:
   - `Sum1 = A ⊕ B`
   - `Carry1 = A · B`
 
 ### Step 2: Second Half Adder
+
 - **Inputs**: `Sum1`, `Cin`
 - **Outputs**:
   - `Sum = Sum1 ⊕ Cin`
   - `Carry2 = Sum1 · Cin`
 
 ### Step 3: Final Carry Output
+
 - `Cout = Carry1 + Carry2`
 
 ---

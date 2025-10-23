@@ -29,7 +29,7 @@ Sequential circuits rely on memory elements to store and update state. Two funda
 | **E**  | Enable       |
 | **Q**  | Output       |
 
-**Q = D** when **E = 1**  
+**Q = D** when **E = 1**
 **Q holds** when **E = 0**
 
 ---
@@ -57,7 +57,6 @@ Sequential circuits rely on memory elements to store and update state. Two funda
 
 ## 🧠 Summary
 
-> **Latches** are level-sensitive and update continuously while enabled.  
-> **Flip-flops** are edge-triggered and update only at clock transitions.  
+> **Latches** are level-sensitive and update continuously while enabled.
+> **Flip-flops** are edge-triggered and update only at clock transitions.
 > Flip-flops are preferred in synchronous systems for predictable timing and noise immunity.
-

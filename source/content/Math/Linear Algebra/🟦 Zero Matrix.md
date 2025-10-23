@@ -1,13 +1,17 @@
 
 ### 🔹 Motivation
+
 The zero matrix represents the **additive identity** in matrix algebra. It’s the matrix equivalent of zero in scalar arithmetic—adding it to any matrix of the same dimensions leaves the original unchanged.
 
 ### 🔹 Definition
+
 A **zero matrix** is an $n \times m$ matrix where **every entry is zero**. It’s denoted by:
+
 - $\mathbf{0}_{n \times m}$ for general dimensions
 - $\mathbf{0}$ when the context or shape is clear (e.g., row or column vector)
 
 ### 🔹 Examples
+
 - General rectangular zero matrix:
   $$
   \mathbf{0}_{2 \times 4} = \begin{bmatrix}
@@ -28,6 +32,7 @@ A **zero matrix** is an $n \times m$ matrix where **every entry is zero**. It’
   $$
 
 ### 🔹 Properties
+
 | Operation | Result |
 |----------|--------|
 | $A + \mathbf{0}_{n \times m}$ | $A$ |
@@ -35,6 +40,7 @@ A **zero matrix** is an $n \times m$ matrix where **every entry is zero**. It’
 | $A \cdot \mathbf{0}$ | $0$ (if dimensions match) |
 
 ### 🔹 Semantic Audit Flags
+
 - ✅ **Shape-sensitive**: Must match dimensions of operand in addition.
 - ⚠️ **Multiplication ambiguity**: $A \cdot 0$ only valid if inner dimensions align.
 - ✅ **Neutral element** under addition.

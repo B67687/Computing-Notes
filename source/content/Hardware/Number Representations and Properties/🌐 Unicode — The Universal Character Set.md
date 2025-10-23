@@ -1,9 +1,11 @@
 ## 📌 Motivation
+
 Unicode solves the chaos of incompatible encodings by defining a single, consistent catalog of characters for every language, symbol, and emoji. It’s not an encoding—it’s the **semantic backbone** that encoding schemes like UTF-8, UTF-16, and UTF-32 rely on.
 
 ## 🧠 Core Concepts
 
 ### 🔢 Code Points
+
 - Each character is assigned a unique number: `U+XXXX`
 - Example: `'A'` → `U+0041`, `'π'` → `U+03C0`, `'😀'` → `U+1F600`
 

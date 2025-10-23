@@ -1,5 +1,6 @@
 
 ## 🔍 Motivation
+
 In Boolean algebra, grouping adjacent 1s in a Karnaugh map (K-map) simplifies expressions by eliminating variables. But not all group sizes are valid. While even numbers might seem sufficient, only **powers of 2** guarantee full logical reduction. This noteblock flags the distinction and explains why grouping by powers of 2 is essential.
 
 ---

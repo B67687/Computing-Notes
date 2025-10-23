@@ -29,7 +29,8 @@ A = qd + r \quad \text{and} \quad B = pd + r
 $$
 
 If $A$ and $B$ share the same remainder $r$ under division by $d$, then:
-- Their difference is a multiple of $d$:  
+
+- Their difference is a multiple of $d$:
   $A - B = (q - p)d$
 - Only the quotient varies; the remainder is fixed.
 
@@ -38,6 +39,7 @@ If $A$ and $B$ share the same remainder $r$ under division by $d$, then:
 ### 📉 Reliable Modulo Check
 
 To test if $A \equiv B \pmod{n}$:
+
 - ✅ Check if $(A - B) \mod n = 0$
 - Faster than computing both remainders separately
 - Conceptually: congruent numbers differ by full groups of $n$
@@ -49,16 +51,16 @@ To test if $A \equiv B \pmod{n}$:
 #### ❌ Conventional Form
 
 - $A \equiv B \pmod{n}$ looks like:
-  > "$A$ is congruent to ($B \space \text{mod} \space n$)"  
+  > "$A$ is congruent to ($B \space \text{mod} \space n$)"
   …which is not the intended meaning.
 
 #### ✅ Proposed Alternatives
 
-- **Language-first**:  
+- **Language-first**:
   > “In mod $n$, $A$ is congruent to $B$”
 
-- **Compact notation**:  
-  > $(A \equiv B)_{\text{mod }n}$  
+- **Compact notation**:
+  > $(A \equiv B)_{\text{mod }n}$
   …makes the scope of congruence explicit and extensible.
 
 #### ⚠️ Ambiguity Warning
@@ -71,7 +73,8 @@ To test if $A \equiv B \pmod{n}$:
 ### 🔍 Modulo and Small Numbers
 
 If $|A| < n$:
-- $A$ is the remainder itself:  
+
+- $A$ is the remainder itself:
   $A \mod n = A$
 
 ---

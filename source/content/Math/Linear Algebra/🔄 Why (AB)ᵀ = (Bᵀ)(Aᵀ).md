@@ -21,13 +21,13 @@ This reflects how matrix multiplication contracts across shared dimensions—row
 
 When we transpose $AB$, we swap its rows and columns:
 
-- Originally:  
+- Originally:
   → **row from $A$**, **column from $B$**
 
-- After transpose:  
+- After transpose:
   → **row from $B$**, **column from $A$**
 
-> [!note] Axis Role Flip  
+> [!note] Axis Role Flip
 > Transposing $AB$ reverses the roles of $A$ and $B$ in how they contribute to the output matrix.
 
 ---
@@ -50,7 +50,7 @@ $$
 (AB)^\top = B^\top A^\top
 $$
 
-> [!tip] Semantic Reversal  
+> [!tip] Semantic Reversal
 > Transpose flips both the **order** and the **orientation** of the original matrices to preserve dot product semantics.
 
 ---
@@ -59,8 +59,8 @@ $$
 
 $$
 \boxed{
-	\phantom{\big(}
-	(AB)^\top = B^\top A^\top
-	\phantom{\big)}
+ \phantom{\big(}
+ (AB)^\top = B^\top A^\top
+ \phantom{\big)}
 }
 $$

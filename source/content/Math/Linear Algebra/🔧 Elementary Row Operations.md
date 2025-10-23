@@ -75,4 +75,3 @@ Each step uses the notation to **track transformations** clearly.
 - Row echelon form
 - Matrix rank and consistency
 - Augmented matrix notation
-

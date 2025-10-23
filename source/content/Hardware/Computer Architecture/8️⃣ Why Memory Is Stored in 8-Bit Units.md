@@ -1,8 +1,9 @@
-Memory is typically stored and addressed in **bytes**, which are 8 bits wide. 
+Memory is typically stored and addressed in **bytes**, which are 8 bits wide.
 
 This convention balances hardware simplicity, software compatibility, and encoding power.
 
 ## 🎯 Motivation
+
 A single bit can only represent two states: $0$ or $1$. That’s too limited for most unit data types. By grouping 8 bits into a byte, we unlock:
 
 - $2^8 = 256$ distinct values

@@ -138,11 +138,10 @@ $$
 ## 🧾 Summary
 
 > [!summary] Transpose Properties
+>
 > - 🔁 Self-inverse: $(A^\top)^\top = A$
 > - ➕ Linearity: $(A \pm B)^\top = A^\top \pm B^\top$
 > - 🔢 Scalar compatibility: $(cA)^\top = cA^\top$
 > - 🔄 Multiplication reversal: $(AB)^\top = B^\top A^\top$
 >
 > Transpose preserves structure, respects entry-wise operations, and reverses axis semantics in multiplication.
-
-

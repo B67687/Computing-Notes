@@ -1,5 +1,5 @@
 
-Logic gates are the building blocks of digital electronics.  
+Logic gates are the building blocks of digital electronics.
 
 They process binary inputs (`0` or `1`) to produce a single binary output based on a specific logical function.
 
@@ -23,11 +23,11 @@ An **AND** gate outputs `1` **only if** all its inputs are `1`. Otherwise, it ou
 ### 📐 Symbol
 
     A ----| & |
-			    ---- OUT
+       ---- OUT
     B ----|   |
 
-
 ### 🔍 Notes
+
 - Logical operation: **Multiplication** in Boolean algebra.
 - Only true when **all inputs** are true.
 - Extendable to more than 2 inputs.
@@ -50,10 +50,11 @@ An **OR** gate outputs `1` if **at least one** input is `1`.
 ### 📐 Symbol
 
     A ----)≥1 )
-			    ---- OUT
+       ---- OUT
     B ----)   )
 
 ### 🔍 Notes
+
 - Logical operation: **Addition** in Boolean algebra.
 - True if **any** input is true.
 - Used to combine conditions.
@@ -63,6 +64,7 @@ An **OR** gate outputs `1` if **at least one** input is `1`.
 ## 3️⃣ NOT Gate
 
 ### 🧾 Definition
+
 A **NOT** gate outputs the **opposite** of its input (inverts it).
 
 ### 📊 Truth Table
@@ -76,8 +78,8 @@ A **NOT** gate outputs the **opposite** of its input (inverts it).
 
     A ----|>o---- OUT
 
-
 ### 🔍 Notes
+
 - Logical operation: **Negation** in Boolean algebra.
 - Often called an **inverter**.
 - Only 1 input.
@@ -85,6 +87,7 @@ A **NOT** gate outputs the **opposite** of its input (inverts it).
 ---
 
 ## 🧠 Key Takeaways
+
 - **AND, OR, NOT** are the **fundamental** gates; all other logic gates and digital circuits can be built from them.
 - Represented mathematically in **Boolean algebra**.
 - Implemented physically using **transistors** in integrated circuits.

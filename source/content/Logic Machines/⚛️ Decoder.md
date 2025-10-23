@@ -2,7 +2,8 @@ A **decoder** is a digital logic circuit that translates binary input into a uni
 
 Given $n$ binary inputs, it activates one of up to $2^n$ outputs—typically in **[[1️⃣ One-Hot vs One-Cold Encoding|one-hot]]** form
 
-> [!info] 
+> [!info]
+>
 > - **Inputs**: $n$ binary signals
 > - **Outputs**: $2^n$ one-hot lines, each a [[💡 Minterms and Maxterms#🔹 Minterms Strict Identifiers of ON States | minterm]] of the input space
 
@@ -33,11 +34,10 @@ graph TB
   DEC --> Y3
 ```
 
-
-
 ---
 
 ## 🏷️ Naming
+
 Decoder name follow the convention of: `Input-to-Output Decoder`
 
 | Inputs | Outputs   | Notes           |

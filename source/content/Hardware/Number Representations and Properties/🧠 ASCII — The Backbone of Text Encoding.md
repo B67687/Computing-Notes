@@ -1,4 +1,5 @@
 ## 📌 Motivation
+
 Before Unicode took over the world, ASCII (American Standard Code for Information Interchange) was the lingua franca of digital text. It’s minimal, elegant, and still foundational in system-level scripting, protocol headers, and byte-level debugging.
 
 ## 🧱 Core Structure

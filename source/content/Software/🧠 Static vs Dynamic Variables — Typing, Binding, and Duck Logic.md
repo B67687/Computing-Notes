@@ -19,6 +19,7 @@ Understanding how variables behave—how they're typed, bound, and interpreted�
 int x = 5
 x = "hello"  ❌ Compile-time error
 ```
+
 - ✅ Type is declared explicitly (`int`, `float`, etc.)
 - ✅ Errors are caught early by the compiler
 - ✅ IDEs offer better autocomplete and refactoring
@@ -35,9 +36,9 @@ x = 5
 x = "hello"  ✅ Allowed
 ```
 
-- ✅ No need to declare types  
-- ✅ Flexible and concise  
-- ❌ Type errors only show up at runtime  
+- ✅ No need to declare types
+- ✅ Flexible and concise
+- ❌ Type errors only show up at runtime
 - ❌ Harder to optimize or refactor
 
 🧠 Languages: Python, JavaScript, Ruby, Lua
@@ -55,8 +56,9 @@ def quack_and_walk(thing):
     thing.quack()
     thing.walk()
 ```
-- ✅ No need to check `type(thing)`  
-- ✅ As long as `thing` has `quack()` and `walk()`, it works  
+
+- ✅ No need to check `type(thing)`
+- ✅ As long as `thing` has `quack()` and `walk()`, it works
 - ❌ May cause runtime errors if methods are missing
 
 🧠 Emphasizes **interface by behavior**, not inheritance or type declaration.
@@ -87,9 +89,8 @@ def quack_and_walk(thing):
 
 ## 🔗 Related Notes
 
-- [[Type Systems — Nominal vs Structural]]  
-- [[Polymorphism — Static, Dynamic, and Duck]]  
-- [[Function Overloading vs Duck Behavior]]  
-- [[Error Handling in Dynamic Languages]]  
+- [[Type Systems — Nominal vs Structural]]
+- [[Polymorphism — Static, Dynamic, and Duck]]
+- [[Function Overloading vs Duck Behavior]]
+- [[Error Handling in Dynamic Languages]]
 - [[Compile-Time vs Runtime Logic]]
-

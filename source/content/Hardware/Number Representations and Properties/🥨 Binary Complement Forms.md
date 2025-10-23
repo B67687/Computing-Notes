@@ -4,6 +4,7 @@
 Complements are alternate representations of numbers that enable subtraction via addition. They’re used in digital systems to simplify arithmetic operations, especially subtraction and signed number representation.
 
 There are two major types:
+
 - **Diminished Complement**: One less than the full radix complement
 - **Non-Diminished (Radix) Complement**: The full complement relative to the base
 
@@ -16,11 +17,13 @@ There are two major types:
 Let’s use base-10 (decimal) to illustrate:
 
 ### 1. Diminished Complement (9’s Complement)
+
 - Defined as: $10^n - 1 - N$
 - Example: For 3-digit number 123 → $999 - 123 = 876$
 - Used in manual subtraction methods
 
 ### 2. Non-Diminished Complement (10’s Complement)
+
 - Defined as: $10^n - N$
 - Example: For 3-digit number 123 → $1000 - 123 = 877$
 - Enables subtraction via addition with carry discard
@@ -36,42 +39,46 @@ In binary (base-2), these concepts map directly to:
 | Radix Complement | $2^n - N$          | **2’s Complement** |
 | Diminished Radix Complement | $2^n - 1 - N$          | **1’s Complement** |
 
-
 > [!NOTE]
-> **2's Complement ———— $2^n - N$  
-> **1's Complement ———— $2^n - 1 - N$  
-> 
-> - Thus we notice that: 
-	> `1's Complement` = `2's Complement` - `1`
-> - Or similarly: 
-	> `2's Complement` = `1's Complement` + `1`
+> **2's Complement ———— $2^n - N$
+>**1's Complement ———— $2^n - 1 - N$
+>
+> - Thus we notice that:
+ > `1's Complement` = `2's Complement` - `1`
+> - Or similarly:
+ > `2's Complement` = `1's Complement` + `1`
 
 ---
 
-
 ## 🔁 1’s Complement (Diminished)
-- Operation: **Bitwise inversion** (flip all bits) 
+
+- Operation: **Bitwise inversion** (flip all bits)
+
 > Refer to [[🥨 Binary Complement Form Conversion — Derivation#🔁 1's Complement| Binary Complements Derivation]] to understand why
 
 - Example: `0101` → `1010`
 - Used historically in older systems
 - Requires **end-around carry** during addition
 
-### Properties:
+### Properties
+
 - Two representations of zero: `0000` (+0) and `1111` (−0)
 - Subtraction via: $A + (\text{1’s complement of B}) + \text{carry}$
 
 ---
 
 ## 🔁 2’s Complement (Non-Diminished)
+
 - Operation: **Bitwise inversion + 1**
+
 > Refer to [[🥨 Binary Complement Form Conversion — Derivation#🔁 2's Complement| Binary Complements Derivation]] to understand why
 
 - Example: `0101` → `1010` → `1011`
 - Dominant in modern computing
 - No need for end-around carry
 
-### Properties:
+### Properties
+
 - Single representation of zero: `0000`
 - Arithmetic is **bitwise consistent**
 - Overflow detection is straightforward
@@ -102,6 +109,7 @@ In binary (base-2), these concepts map directly to:
 ## 🔍 Visual Analogy
 
 Imagine complements as **mirrors**:
+
 - 1’s complement is a **partial mirror**—it reflects the bits but doesn’t shift the frame
 - 2’s complement is a **full mirror with offset**—it reflects and nudges the value to complete the inversion
 
@@ -113,4 +121,3 @@ Imagine complements as **mirrors**:
 - Module: Subtraction via complement addition
 - Table: Comparison of signed representations across complement systems
 - Semantic map: How radix logic generalizes to binary
-

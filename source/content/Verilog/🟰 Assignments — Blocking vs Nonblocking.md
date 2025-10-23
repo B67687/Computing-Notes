@@ -14,7 +14,7 @@ This notebook explains the difference between **blocking (`=`)** and **nonblocki
 >
 > These terms come from **software concurrency**, especially in languages like C or Java, where:
 >
-> - A **blocking call** halts execution until it completes.    
+> - A **blocking call** halts execution until it completes.
 > - A **nonblocking call** allows other operations to proceed in parallel.
 >
 > Verilog borrowed this terminology to describe how assignments behave **inside procedural blocks** (`always`, `initial`), especially when modeling **sequential logic**.
@@ -38,6 +38,7 @@ end
 ```
 
 ### 🚫 Pitfall
+
 - This creates unintended behavior because `a` is updated before `b`.
 
 ---
@@ -59,6 +60,7 @@ end
 ```
 
 ### ✅ Benefit
+
 - Ensures consistent behavior across clock cycles.
 
 ---

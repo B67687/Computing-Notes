@@ -1,5 +1,5 @@
 
-In digital systems, signals are often described as **High** or **Low**. 
+In digital systems, signals are often described as **High** or **Low**.
 
 ---
 
@@ -13,6 +13,7 @@ At their core, **High** and **Low** refer to **voltage regions**
 | **Low**  | Grounded voltage (near GND) | ~0V to 0.8V |
 
 These are **physical descriptors**:
+
 - **High** means the signal line is carrying a voltage close to the positive supply rail.
 - **Low** means the signal line is close to ground.
 
@@ -30,5 +31,6 @@ To interpret High/Low as binary values, we need to know the **signal’s polarit
 | **Active-Low**  | Deasserted / FALSE / `0` | Asserted / TRUE / `1` |
 
 So:
+
 - **High voltage always means elevated potential**
 - But whether that means `1` or `0` depends on whether the signal is **active-high** or **active-low**

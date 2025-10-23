@@ -1,8 +1,8 @@
 ## 🧠 Overview
 
 > [!Summary]
-> Signed multiplication in 2’s complement systems behaves like normal multiplication—with a few critical architectural quirks.  
-> These quirks arise from modular arithmetic, bit-width constraints, and the encoding of negative values.  
+> Signed multiplication in 2’s complement systems behaves like normal multiplication—with a few critical architectural quirks.
+> These quirks arise from modular arithmetic, bit-width constraints, and the encoding of negative values.
 > This notebook documents the four foundational principles that govern signed multiplication.
 
 ---
@@ -23,12 +23,14 @@
 > [!Why this matters]
 > Multiplying an $m$-bit number by an $n$-bit number yields a product of **at most $m + n$ bits**
 
-> ### Derivation:
+> ### Derivation
+>
 > - Max value of $m$-bit number: $r^m - 1$
 > - Max value of $n$-bit number: $r^n - 1$
 > - Max product: $(r^m - 1)(r^n - 1) < r^{m+n}$
 
-### Implication:
+### Implication
+
 - Always allocate $m + n$ bits to avoid overflow
 - This holds in **any base**, not just binary
 
@@ -39,12 +41,14 @@
 > [!Why it works]
 > Extending the sign bit (MSB) preserves the value because 2’s complement is a **modular system**
 
-### Formal Insight:
+### Formal Insight
+
 - $x$ in $n$ bits → interpreted modulo $2^n$
 - Extend to $m$ bits ($m > n$): replicate MSB
 - Value remains congruent modulo $2^m$
 
-### Example:
+### Example
+
 - $1101_4$ = $-3$
 - Sign-extended: $11111101_8$ = still $-3$
 
@@ -55,15 +59,17 @@
 ## ⚙️ 3. Signed Bit Triggers 2’s Complement Correction
 
 > [!Why we use 2’s complement]
-> The signed bit (MSB of multiplier) represents **negative weight**.  
+> The signed bit (MSB of multiplier) represents **negative weight**.
 > We can’t multiply it like a normal digit—it contributes a **−2ⁿ** term.
 
-### Correction Strategy:
+### Correction Strategy
+
 - Use 2’s complement of multiplicand
 - Shift appropriately
 - Add/subtract based on sign logic (e.g., Booth’s transitions)
 
-### Semantic Insight:
+### Semantic Insight
+
 - 2’s complement lets us **encode subtraction as addition**
 - This enables clean accumulation of negative partial products
 
@@ -71,12 +77,12 @@
 
 ## ✅ Semantic Flags
 
-| Principle                     | Semantic Role                  |
-|------------------------------|--------------------------------|
-| Normal multiplication        | Structural baseline            |
-| Max bit-width $m + n$        | Overflow planning              |
-| Sign extension               | Modular integrity              |
-| 2’s complement correction    | Negative weight propagation    |
+| Principle                 | Semantic Role               |
+| ------------------------- | --------------------------- |
+| Normal multiplication     | Structural baseline         |
+| Max bit-width $m + n$     | Overflow planning           |
+| Sign extension            | Modular integrity           |
+| 2’s complement correction | Negative weight propagation |
 
 ---
 
@@ -92,6 +98,5 @@
 ## 🧠 Closing Reflection
 
 > [!Note]
-> Signed multiplication is not a mystery—it’s a modular, bit-precise system with elegant correction logic.  
+> Signed multiplication is not a mystery—it’s a modular, bit-precise system with elegant correction logic.
 > Once you separate **magnitude logic** from **sign logic**, the architecture becomes teachable, extensible, and audit-ready.
-

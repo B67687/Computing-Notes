@@ -1,6 +1,7 @@
 ## 📘 Overview
 
 Negating logical expressions requires understanding the **independent roles** of:
+
 - **Quantifiers**: $\forall$, $\exists$
 - **Logical operators**: $\land$, $\lor$, $\Rightarrow$, $\neg$
 
@@ -10,7 +11,7 @@ These components are **syntactically nested** but **semantically independent**�
 
 ## 🧠 Structural Principle
 
-> **Quantifiers and logical operators do not cancel or interfere with each other.**  
+> **Quantifiers and logical operators do not cancel or interfere with each other.**
 > When negating a compound expression, each layer must be negated according to its own transformation rule.
 
 ---
@@ -41,18 +42,21 @@ These components are **syntactically nested** but **semantically independent**�
 
 ## 🧩 Compound Example
 
-### Original:
+### Original
+>
 > $\exists x \in A,\;P(x) \lor Q(x)$
 
-### Negation:
+### Negation
+>
 > $\forall x \in A,\;\neg P(x) \land \neg Q(x)$
 
-### Breakdown:
+### Breakdown
+
 - **Quantifier flip**: $\exists \rightarrow \forall$
 - **Connective flip**: $\lor \rightarrow \land$
 - **Predicate negation**: $P(x), Q(x) \rightarrow \neg P(x), \neg Q(x)$
 
-### Visual Anchor:
+### Visual Anchor
 
 ```
 Original:   ∃x ∈ A,   [P(x) ∨ Q(x)]

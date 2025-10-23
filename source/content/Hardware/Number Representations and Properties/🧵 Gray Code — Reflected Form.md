@@ -10,7 +10,7 @@ Let’s explore this from first principles, building intuition as we go.
 We begin with the base case: binary numbers of 1 digit.
 
 ```
-0  
+0
 1
 ```
 
@@ -27,7 +27,7 @@ To expand to the next digit, we must now consider both the `0` MSB case and the 
 This is straightforward. We can simply append a `0` to the front of each existing number:
 
 ```
-0 + 0 → 00  
+0 + 0 → 00
 0 + 1 → 01
 ```
 
@@ -56,22 +56,25 @@ To do this, we realize that we can keep the remaining bits for the other numbers
 Why? Because 1-bit change not only happens forwards but also backwards.
 
 So instead of:
+
 ```
-1 + 0 → 10  
+1 + 0 → 10
 1 + 1 → 11
 ```
 
 We reverse the original sequence:
+
 ```
-1 + 1 → 11  
+1 + 1 → 11
 1 + 0 → 10
 ```
 
 Now the full 2-bit Gray code is:
+
 ```
-00  
-01  
-11  
+00
+01
+11
 10
 ```
 
@@ -99,12 +102,13 @@ This means they differ in 1 bit — which satisfies Gray code again, achieving t
 
 Thus, a reliable way of generating Gray code with wraparound is:
 
-> Simply reflect all the current binary numbers,  
-> Assign `0` to the MSB of the first set,  
-> Assign `1` to the MSB of the second set,  
+> Simply reflect all the current binary numbers,
+> Assign `0` to the MSB of the first set,
+> Assign `1` to the MSB of the second set,
 > And that's it.
 
 This method guarantees:
+
 - 1-bit transitions between all successive numbers
 - Cyclic wraparound with only one bit change
 - Recursive scalability

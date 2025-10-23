@@ -1,4 +1,5 @@
 ### 🔹 Motivation
+
 Linear algebra is the mathematics of **vectors**, **matrices**, and **linear transformations**. It governs systems where **scaling** and **adding** behave predictably—preserving structure, direction, and proportionality.
 
 It’s not just “math on arrays”—it’s the **logic of linear relationships**, used in geometry, physics, computer graphics, machine learning, and more.
@@ -6,6 +7,7 @@ It’s not just “math on arrays”—it’s the **logic of linear relationship
 ---
 
 ### 🔹 Core Objects
+
 | Object | Description |
 |--------|-------------|
 | Scalars | Single numbers (from a field like $\mathbb{R}$ or $\mathbb{C}$) |
@@ -62,6 +64,7 @@ Linear algebra excludes operations that **break linearity**, **lack transformati
 ### 🔹 Philosophical Framing
 
 Linear algebra is the **language of linear structure**:
+
 - It models how systems respond to **scaling** and **combination**
 - It encodes **geometry**, **symmetry**, and **composition**
 - It excludes operations that don’t respect these principles

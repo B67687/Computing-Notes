@@ -1,5 +1,6 @@
 
 ## 📘 Overview
+
 Endianness defines how multi-byte data (e.g. 16-bit, 32-bit, 64-bit) is stored in memory. It determines the **byte order**—not digit order—used to represent values.
 
 | Term           | Definition                                      |
@@ -11,7 +12,7 @@ Endianness defines how multi-byte data (e.g. 16-bit, 32-bit, 64-bit) is stored i
 
 ## 📚 Etymology & Semantic Ancestry
 
-The term **"endian"** originates from **Jonathan Swift’s _Gulliver’s Travels_ (1726)**, where two factions—the *Big-Endians* and *Little-Endians*—argue over which end of a boiled egg to crack first. Swift used this absurd conflict to satirize religious and political disputes.
+The term **"endian"** originates from **Jonathan Swift’s _Gulliver’s Travels_ (1726)**, where two factions—the _Big-Endians_ and _Little-Endians_—argue over which end of a boiled egg to crack first. Swift used this absurd conflict to satirize religious and political disputes.
 
 > Thus the word is `End-ian`
 
@@ -20,7 +21,7 @@ In **1980**, computer scientist **Danny Cohen** repurposed the metaphor in an In
 - **Big-endian**: MSB-first systems
 - **Little-endian**: LSB-first systems
 
-> 🧠 *Semantic Flag*: The term is a rare example of literary satire becoming a technical standard.
+> 🧠 _Semantic Flag_: The term is a rare example of literary satire becoming a technical standard.
 
 ---
 
@@ -59,22 +60,26 @@ Little-endian  →   0x78   0x56   0x34   0x12
 ## 🧭 Usage Contexts
 
 ### ✅ Big-endian Preferred
+
 - **Network protocols**: TCP/IP, DNS, HTTP headers (`#network-standard`)
 - **Binary formats**: JPEG, MPEG, EXIF (`#human-readable`)
 - **Embedded systems**: Hex dumps for diagnostics (`#sign-bit-access`)
 
 ### ❌ Big-endian Avoided
+
 - **x86/x64 systems**: Native little-endian architecture
 - **Low-level arithmetic**: Harder to start from LSB (`#arithmetic-efficiency`)
 
 ---
 
 ### ✅ Little-endian Preferred
+
 - **Intel/AMD CPUs**: Native format (`#memory-fetch`)
 - **Arithmetic-heavy systems**: Easier overflow detection, addition (`#arithmetic-efficiency`)
 - **Low-level debugging**: Easier to trace LSB-first logic
 
 ### ❌ Little-endian Avoided
+
 - **Cross-platform communication**: Requires conversion to big-endian
 - **Lexicographic sorting**: MSB-last complicates binary comparison
 

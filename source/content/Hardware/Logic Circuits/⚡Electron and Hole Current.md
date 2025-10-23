@@ -1,6 +1,7 @@
 
 ### 🧠 Motivation
-In semiconductors, especially in **p-type materials**, current isn't just about electrons moving in the **conduction band** —it's about the **absence of electrons** (holes) moving in the **valence band** behaving like positive charge carriers. 
+
+In semiconductors, especially in **p-type materials**, current isn't just about electrons moving in the **conduction band** —it's about the **absence of electrons** (holes) moving in the **valence band** behaving like positive charge carriers.
 
 ---
 

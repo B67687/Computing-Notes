@@ -7,8 +7,8 @@ In digital systems, signals often carry meaning not just through their value (0 
 
 - **Definition**: A signal is *active-low* if its intended action or assertion occurs when the signal is `0`.
 - **Notation**: Often denoted with a bar (e.g. $\overline{\text{RESET}}$) or suffix `_n`, `_bar`, `_b` (e.g. `reset_n`, `enable_b`).
-- **Interpretation**:  
-  - `reset_n = 0` → reset is *active*  
+- **Interpretation**:
+  - `reset_n = 0` → reset is *active*
   - `reset_n = 1` → reset is *inactive*
 
 - **Use Case**: Common in hardware due to transistor behavior (e.g. NMOS pulls low more easily), and noise immunity (low signals are less likely to be corrupted).
@@ -19,8 +19,8 @@ In digital systems, signals often carry meaning not just through their value (0 
 
 - **Definition**: A complement is the logical inverse of a signal or expression.
 - **Notation**: Typically written as `!A`, `~A`, or $\overline{A}$.
-- **Interpretation**:  
-  - If `A = 1`, then `~A = 0`  
+- **Interpretation**:
+  - If `A = 1`, then `~A = 0`
   - If `A = 0`, then `~A = 1`
 
 - **Use Case**: Used in logic expressions, truth tables, and Boolean simplification.
@@ -41,7 +41,6 @@ In digital systems, signals often carry meaning not just through their value (0 
 
 ### 🧠 Analogy
 
-Think of **active-low** as a doorbell that rings when *not pressed* — the system is designed to respond to a low signal.  
+Think of **active-low** as a doorbell that rings when *not pressed* — the system is designed to respond to a low signal.
 
 Think of **complement** as flipping a switch — it’s just the inverse of whatever state you started with.
-

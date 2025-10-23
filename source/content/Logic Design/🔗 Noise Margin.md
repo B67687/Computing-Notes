@@ -1,4 +1,5 @@
 Digital signals travel across wires, buses, and PCB traces—but the real world is noisy. Voltage levels can fluctuate due to:
+
 - Crosstalk from nearby signals
 - Power supply ripple
 - Electromagnetic interference
@@ -14,6 +15,7 @@ Even if a signal is meant to be HIGH or LOW, it might **degrade** in transit. We
 ## ⚙️ Noise Margin Depends on Voltage Thresholds
 
 We calculate noise margin by comparing:
+
 - What the **output guarantees**
 - What the **input requires**
 
@@ -34,4 +36,3 @@ We calculate noise margin by comparing:
 - Ensures reliable logic even in electrically noisy environments
 - Allows interoperability across devices with different drive strengths
 - Critical for long traces, high-speed buses, and mixed-voltage systems
-

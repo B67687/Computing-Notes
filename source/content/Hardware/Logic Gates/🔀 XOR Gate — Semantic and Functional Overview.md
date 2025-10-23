@@ -14,16 +14,19 @@
 ## 🧩 Semantic Roles
 
 ### 1. **Conditional Inverter**
+
 - `A ⊕ 0` → preserves A
 - `A ⊕ 1` → inverts A
 
 This makes XOR ideal for circuits where inversion is **controlled by a single flag**, like `Add/Sub`.
 
 ### 2. **Parity Checker**
+
 - XOR of all bits in a word → 1 if odd number of 1s
 - Used in error detection and parity generation
 
 ### 3. **Bit Masking**
+
 - Toggle specific bits using XOR with a mask
 - Example: `value ⊕ 0xFF` → bitwise inversion
 
@@ -57,4 +60,3 @@ This makes XOR ideal for circuits where inversion is **controlled by a single fl
 | Conditional inversion | `A ⊕ control` | Control = 1 → invert A       |
 | Parity check       | `A ⊕ B ⊕ C...` | Result = 1 → odd parity      |
 | Bit toggling       | `A ⊕ mask`     | Mask bits = 1 → toggle       |
-

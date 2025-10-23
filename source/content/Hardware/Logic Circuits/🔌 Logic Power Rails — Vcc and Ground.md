@@ -32,4 +32,3 @@
 - Every logic device needs a pair of **Vcc and GND** to operate.
 - Without power rails, logic gates are electrically inert.
 - Vcc and GND are foundational to all digital logic families (TTL, CMOS, etc.)
-

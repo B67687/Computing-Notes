@@ -1,4 +1,4 @@
-Understanding the distinction between procedures and functions is foundational in programming, logic design, and algorithmic reasoning. 
+Understanding the distinction between procedures and functions is foundational in programming, logic design, and algorithmic reasoning.
 
 ---
 
@@ -16,6 +16,7 @@ Understanding the distinction between procedures and functions is foundational i
 ---
 
 ## 🧠 Semantic Resonance Map
+
 ```mermaid
     graph TD
         A[Procedure] -->|Action-oriented| B[State Mutation]
@@ -30,8 +31,6 @@ Understanding the distinction between procedures and functions is foundational i
 
 ## 🧪 Example (Python)
 
-
-
     # Procedure
     def log_message(msg):
         print(f"Log: {msg}")  # Side effect: console output
@@ -40,20 +39,19 @@ Understanding the distinction between procedures and functions is foundational i
     def square(x):
         return x * x  # Pure computation
 
-
 ---
 
 ## 🧭 When to Use
 
-- ✅ Use **procedures** for tasks like logging, file I/O, or system calls.  
+- ✅ Use **procedures** for tasks like logging, file I/O, or system calls.
 - ✅ Use **functions** for deterministic computations, transformations, and logic encapsulation.
 
 ---
 
 ## 🧱 Vault Integration Tips
 
-- 🔒 Tag procedures with #side-effect and functions with #pure for audit clarity.  
-- 📦 Use semantic maps to trace dependencies and return lineage.  
+- 🔒 Tag procedures with #side-effect and functions with #pure for audit clarity.
+- 📦 Use semantic maps to trace dependencies and return lineage.
 - 🧮 Benchmark function purity for optimization and testability.
 
 ---
@@ -66,5 +64,5 @@ Procedures embody *doing*, while functions embody *knowing*. In ethical systems,
 
 ## 📚 Further Reading
 
-- Clean Code by Robert C. Martin  
+- Clean Code by Robert C. Martin
 - Structure and Interpretation of Computer Programs (MIT Press)

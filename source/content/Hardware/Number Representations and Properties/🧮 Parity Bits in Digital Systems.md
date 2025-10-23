@@ -3,7 +3,7 @@
 
 > [!Why we invented this]
 > Parity bits offer a lightweight method for **error detection** in digital communication and storage.
-> 
+>
 > By encoding the **evenness or oddness** of 1s in a binary word, parity bits help verify data integrity without heavy computational overhead.
 
 ---
@@ -30,18 +30,22 @@ A **parity bit** is an extra bit appended to a binary word to encode whether the
 ## ⚙️ How Parity Is Computed
 
 ### 🔧 XOR Method (Efficient)
+
 Parity bit = XOR of all data bits
 
-For 8-bit data:  
+For 8-bit data:
+
 ```
 P = D₀ ⊕ D₁ ⊕ D₂ ⊕ D₃ ⊕ D₄ ⊕ D₅ ⊕ D₆ ⊕ D₇
 ```
 
-- Even parity: use result directly  
+- Even parity: use result directly
 - Odd parity: invert the result
 
 ### 🧮 Counting Method (Conceptual)
+
 Count the number of 1s:
+
 - If even → parity bit = 0 (for even parity)
 - If odd → parity bit = 1 (for even parity)
 
@@ -55,18 +59,19 @@ D₀ ─┬─ XOR ─┬─ XOR ─┬─ XOR ─┬─ XOR ─┬─ XOR ─�
     D₁      D₂      D₃      D₄      D₅      D₆      D₇
 ```
 
-
 ---
 
 ## 🛡️ Error Detection Using Parity
 
 ### ✅ Detection Steps
+
 1. Generate parity bit at sender
 2. Transmit data + parity bit
 3. Receiver recomputes parity from received data
 4. Compare with received parity bit
 
 ### ⚠️ Limitations
+
 - Can detect **odd bitflips**
 - Cannot detect **even bitflips**
 - Cannot **correct** errors—only detect

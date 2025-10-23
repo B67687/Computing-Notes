@@ -1,22 +1,24 @@
 
-> *“Symmetry says: ‘If A relates to B, then B relates to A.’  
+> *“Symmetry says: ‘If A relates to B, then B relates to A.’
 > Antisymmetry says: ‘If A relates to B AND B relates to A, then A must be B.’”*
 
 ---
 
 ## 1. 🧩 What Is Antisymmetry?
 
-### Definition:
+### Definition
+
 A relation $R$ on a set $A$ is **antisymmetric** if:
 
 $$
 \forall a,b \in A,\quad (a\,R\,b \land b\,R\,a) \Rightarrow a = b
 $$
 
-### In Plain English:
+### In Plain English
+>
 > If two elements are related **in both directions**, then they **must be the same element**.
 
-- It does **NOT** say “you can’t have mutual relations.”  
+- It does **NOT** say “you can’t have mutual relations.”
 - It says: **“If you do, you’re looking at the same thing.”**
 
 ---
@@ -28,7 +30,7 @@ $$
 | **Symmetric** | If $a\,R\,b$, then $b\,R\,a$ | “Is friends with” — Alice ↔ Bob means Bob ↔ Alice |
 | **Antisymmetric** | If $a\,R\,b$ AND $b\,R\,a$, then $a = b$ | “Is ≤” — if $a \leq b$ and $b \leq a$, then $a = b$ |
 
-> ✅ Symmetric → mutual relationships are **allowed**  
+> ✅ Symmetric → mutual relationships are **allowed**
 > ✅ Antisymmetric → mutual relationships are **only allowed if identical**
 
 They’re **not opposites** — they’re **different ideas** that can even coexist!
@@ -43,6 +45,7 @@ Think of it as the mathematical version of:
 > “If two things point to each other as equal, they’re not just similar — they’re **identical**.”
 
 This is critical for:
+
 - Ordering systems (like numbers, dates, rankings)
 - Databases (avoiding circular references)
 - Logic & computer science (partial orders, lattices)
@@ -55,12 +58,12 @@ This is critical for:
 
 Let $R$ be $\leq$ on $\mathbb{R}$
 
-- Is $3 \leq 5$? Yes  
-- Is $5 \leq 3$? No → so no issue  
-- Is $4 \leq 4$? Yes  
+- Is $3 \leq 5$? Yes
+- Is $5 \leq 3$? No → so no issue
+- Is $4 \leq 4$? Yes
 - Is $4 \leq 4$ AND $4 \leq 4$? Yes → then $4 = 4$ → ✅ Holds
 
-Now suppose $a \leq b$ and $b \leq a$  
+Now suppose $a \leq b$ and $b \leq a$
 → Then $a = b$ — always true!
 
 ✔️ So $\leq$ is **antisymmetric**
@@ -73,11 +76,11 @@ Now suppose $a \leq b$ and $b \leq a$
 
 Let $a\,R\,b$ mean “$a$ divides $b$” → written $a \mid b$
 
-- Does $2 \mid 6$? Yes  
-- Does $6 \mid 2$? No  
-- Does $5 \mid 5$? Yes → and $5 = 5$ → ✅ OK  
-- Suppose $a \mid b$ and $b \mid a$  
-  → Then $a = \pm b$  
+- Does $2 \mid 6$? Yes
+- Does $6 \mid 2$? No
+- Does $5 \mid 5$? Yes → and $5 = 5$ → ✅ OK
+- Suppose $a \mid b$ and $b \mid a$
+  → Then $a = \pm b$
   → But since we're on **positive integers**, $a = b$
 
 ✔️ So divisibility on $\mathbb{Z}^+$ is **antisymmetric**
@@ -86,14 +89,14 @@ Let $a\,R\,b$ mean “$a$ divides $b$” → written $a \mid b$
 
 ### Example 3: Subset ($\subseteq$) on Sets
 
-Let $A$ and $B$ be sets.  
+Let $A$ and $B$ be sets.
 Define $A\,R\,B$ iff $A \subseteq B$
 
-- Is $\{1\} \subseteq \{1,2\}$? Yes  
-- Is $\{1,2\} \subseteq \{1\}$? No  
-- Is $\{1\} \subseteq \{1\}$? Yes → and $\{1\} = \{1\}$ → ✅  
+- Is $\{1\} \subseteq \{1,2\}$? Yes
+- Is $\{1,2\} \subseteq \{1\}$? No
+- Is $\{1\} \subseteq \{1\}$? Yes → and $\{1\} = \{1\}$ → ✅
 
-Now suppose $A \subseteq B$ and $B \subseteq A$  
+Now suppose $A \subseteq B$ and $B \subseteq A$
 → Then $A = B$ (by definition of set equality)
 
 ✔️ So $\subseteq$ is **antisymmetric**
@@ -106,7 +109,7 @@ Now suppose $A \subseteq B$ and $B \subseteq A$
 
 Let $x\,R\,y$ mean “x is friends with y”
 
-- Alice ↔ Bob → both relate  
+- Alice ↔ Bob → both relate
 - But Alice ≠ Bob
 
 So: $a\,R\,b$ and $b\,R\,a$, but $a \ne b$ → ❌ Violates antisymmetry
@@ -119,8 +122,8 @@ So: $a\,R\,b$ and $b\,R\,a$, but $a \ne b$ → ❌ Violates antisymmetry
 
 Let $x\,R\,y$ iff $x \equiv y \pmod{5}$
 
-- $2 \equiv 7 \pmod{5}$ → yes  
-- $7 \equiv 2 \pmod{5}$ → yes  
+- $2 \equiv 7 \pmod{5}$ → yes
+- $7 \equiv 2 \pmod{5}$ → yes
 - But $2 \ne 7$
 
 So: $a\,R\,b$ and $b\,R\,a$, but $a \ne b$ → ❌ Not antisymmetric
@@ -138,20 +141,21 @@ So: $a\,R\,b$ and $b\,R\,a$, but $a \ne b$ → ❌ Not antisymmetric
 | **Antisymmetric** | Mutual ⇒ Equal | $a \leq b$ and $b \leq a$ ⇒ $a = b$ |
 | **Asymmetric** | If $a\,R\,b$, then **never** $b\,R\,a$ | $a < b$ → then $b < a$ is false |
 
-> ✅ All **asymmetric** relations are also **antisymmetric**  
+> ✅ All **asymmetric** relations are also **antisymmetric**
 > ❌ But not vice versa!
 
 ### Example: Less Than ($<$)
 
-- $3 < 5$ → true  
-- $5 < 3$ → false → so no mutual relation possible  
+- $3 < 5$ → true
+- $5 < 3$ → false → so no mutual relation possible
 → So $(a\,R\,b \land b\,R\,a)$ is **always false** → implication vacuously true → ✅ Antisymmetric!
 
-But more than that — it’s **asymmetric**:  
+But more than that — it’s **asymmetric**:
 If $a < b$, then $b < a$ is impossible.
 
 So:
-- $<$ → asymmetric → implies antisymmetric ✅  
+
+- $<$ → asymmetric → implies antisymmetric ✅
 - $\leq$ → antisymmetric but **not** asymmetric ✅ (because $a \leq a$)
 
 ---
@@ -183,7 +187,7 @@ So:
 | **Logic** | Building hierarchies (e.g., type systems) |
 | **Set Theory** | Partial orderings on subsets, cardinals |
 
-> ⭐ **Partial Order** = Reflexive + Antisymmetric + Transitive  
+> ⭐ **Partial Order** = Reflexive + Antisymmetric + Transitive
 > Example: $\leq$, $\subseteq$, $\mid$
 
 ---
@@ -192,6 +196,6 @@ So:
 
 Imagine a directed graph where arrows = relation $a \to b$
 
-- **Symmetric** → arrows go both ways between nodes  
-- **Antisymmetric** → you can have arrows in both directions **only if it’s the same node**  
+- **Symmetric** → arrows go both ways between nodes
+- **Antisymmetric** → you can have arrows in both directions **only if it’s the same node**
   → So self-loops are fine, but mutual loops between different nodes? ❌ Forbidden
