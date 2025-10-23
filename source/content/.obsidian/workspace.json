@@ -11,24 +11,10 @@
             "id": "49eab3c10c0acb46",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/Logic Circuits/🧠 Transistors.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "🧠 Transistors"
+              "title": "New tab"
             }
           }
         ]
