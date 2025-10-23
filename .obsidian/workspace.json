@@ -11,10 +11,24 @@
             "id": "49eab3c10c0acb46",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "source/content/Software/🔁 Loop Control Comparison — Sentinel vs Counter.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "🔁 Loop Control Comparison — Sentinel vs Counter"
             }
           }
         ]
@@ -161,10 +175,11 @@
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ec88a7639b95d6f3",
+  "active": "49eab3c10c0acb46",
   "lastOpenFiles": [
     "source/content/Digital and Analog Signals.md",
     "source/content/Verilog/🧑‍💻 Verilog Coding Best Practices & Pitfalls to Avoid.md",
