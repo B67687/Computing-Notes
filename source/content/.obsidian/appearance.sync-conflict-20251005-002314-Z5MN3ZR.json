@@ -1,0 +1,11 @@
+{
+  "cssTheme": "Typewriter",
+  "enabledCssSnippets": [
+    "bigger-latex",
+    "bold-links",
+    "keep-unwrapped"
+  ],
+  "theme": "system",
+  "accentColor": "",
+  "interfaceFontFamily": ""
+}

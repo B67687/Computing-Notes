@@ -1,0 +1,10 @@
+{
+  "enabledCssSnippets": [
+    "bold-text",
+    "bold-links",
+    "bigger-latex"
+  ],
+  "cssTheme": "Typewriter",
+  "accentColor": "",
+  "theme": "system"
+}

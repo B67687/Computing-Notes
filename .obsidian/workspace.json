@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "e96dd38fa306aedb",
+    "type": "split",
+    "children": [
+      {
+        "id": "910d451da7cd6e4b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49eab3c10c0acb46",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fdf214fa7b78bbac",
+    "type": "split",
+    "children": [
+      {
+        "id": "db5236cff95a704e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec88a7639b95d6f3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "83ff91e3525f494b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e52f279c3a8bb06d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 273.5
+  },
+  "right": {
+    "id": "e2d95e94bce6334f",
+    "type": "split",
+    "children": [
+      {
+        "id": "93f66dd5491bd101",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "177acbdc865d67df",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Math/Misc/📔 Math Lessons.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 📔 Math Lessons"
+            }
+          },
+          {
+            "id": "1a3f6e25d2b87aa3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Math/Misc/📔 Math Lessons.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 📔 Math Lessons"
+            }
+          },
+          {
+            "id": "217b4d106d78c3b2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "90ade9f4018878bd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Math/Misc/📔 Math Lessons.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 📔 Math Lessons"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "49eab3c10c0acb46",
+  "lastOpenFiles": [
+    "Hardware/Logic Circuits/🔁 Diodes.md",
+    "Hardware/Logic Circuits/🔁 Diode Directionality and Breakdown Behavior.md",
+    "Logic Design/⏱ Clock Cycles and Sequential Circuit Updates.md",
+    "Logic Machines/🎛️ Multiplexer (MUX).md",
+    "Hardware/Computer Architecture/⏳ Asynchronous and Synchronous Transmission.md",
+    "Hardware/Logic Circuits/🧠 Transistors.md",
+    "Hardware/Logic Gates/☯️ XNOR vs NXOR.md",
+    "Software/💻 Procedures vs Functions.md",
+    "Digital and Analog Signals.md",
+    "Typography/👾 Width Units.md",
+    "Math/Misc/📔 Math Lessons.md",
+    "Literature/🪶 Hamlet - To be or not to be.md",
+    "Restriction of Logarithms.md",
+    "Logic Machines/🔢 Adders — Half and Full.md",
+    "Logic Machines/🔁 Threshold Inverter.md",
+    "Logic Design/🔗 Noise Margin.md",
+    "Logic Design/🔗 Fan-Out.md",
+    "Logic Design/⚡ High and Low.md",
+    "Logic Design/⚡ Active-High and Active-Low.md",
+    "Hardware/Logic Gates/🔀 XOR Gate — Semantic and Functional Overview.md",
+    "Hardware/Logic Gates/🌐 NAND and NOR — Functionally Complete.md",
+    "Logic Design/🔁 Bubble Pushing and Matching.md",
+    "Logic Machines/🧮 Full Adder from Half Adders.md",
+    "Logic Design",
+    "Logic Machines/➕ Full Adder.md",
+    "Logic Machines/⏱️ Flip-Flops.md",
+    "Logic Machines/🧮 Combined Addition–Subtraction Circuit (4-bit).md",
+    "Logic Machines",
+    "Verilog",
+    "Math/Misc/right-triangle-pics/unit-circle.png",
+    "Math/Misc/right-triangle-pics/special-right-angled-triangles.png",
+    "Math/Misc/right-triangle-pics/pythagorean-sec-tan-identity.png",
+    "Math/Misc/right-triangle-pics/pythagorean-sec-tan-cosec-cot-identity.png",
+    "Math/Misc/right-triangle-pics/pythagorean-cosec-cot-identity.png",
+    "Math/Misc/right-triangle-pics/proof-of-side-ratio-constancy.png",
+    "Math/Misc/right-triangle-pics/basic-right-angled-triangle.png",
+    "Math/Misc/right-triangle-pics/all-trig-identities-in-one-triangle.png",
+    "Math/Misc/right-triangle-pics/unit-circle.svg",
+    "Math/Misc/right-triangle-pics/special-right-angled-triangles.svg",
+    "Untitled.canvas",
+    "Math/Misc/right-triangle-pics",
+    "Literature",
+    "Typography",
+    "Untitled.base",
+    "Keep Notes/成语.txt",
+    "Math/Discrete Maths/Modular Arithmetic",
+    "Math/Discrete Maths/Number Systems",
+    "Untitled 1.canvas"
+  ]
+}

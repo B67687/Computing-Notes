@@ -1,0 +1,14 @@
+{
+  "cssTheme": "Primary",
+  "enabledCssSnippets": [
+    "bigger-latex",
+    "bold-links",
+    "keep-unwrapped",
+    "table-centre-element"
+  ],
+  "accentColor": "",
+  "theme": "system",
+  "nativeMenus": false,
+  "showRibbon": false,
+  "showViewHeader": true
+}
